@@ -1197,7 +1197,7 @@ a.side-menu__toggler.side-menu__close-btn {
     margin                           : auto;
     z-index                          : 100;
     border                           : 5px solid #f1f1f1;
-    border-top                       : 5px solid var(--primary-color2);
+    border-top                       : 5px solid var(--primary-color6);
     border-radius                    : 50%;
     width                            : 120px;
     height                           : 120px;
