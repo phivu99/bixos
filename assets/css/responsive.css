@@ -1,12 +1,31 @@
 /* Media Queries
 -------------------------------------------------------------- */
+@media (min-width: 1200px) and (max-width: 950px) {
+  .tf-button {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1650px){
+  .icon-header{
+    display: none;
+  }
+}
+@media only screen and (max-width: 1400px){
+  .phone-header{
+    display: none;
+  }
+}
 
 @media only screen and (max-width: 1565px) {
   .slider .mark-slider {
     display: none;
   }
 }
-
+@media only screen and (max-width: 1200px){
+  .tf-button{
+    display: none;
+  }
+}
 /* ------------------------------------------ */
 /* Smaller than standard 1200 */
 @media only screen and (max-width: 1199px) {

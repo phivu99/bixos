@@ -18,6 +18,9 @@
     <!-- Theme Style -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+     <!-- Swiper slide -->
+     <link rel="stylesheet" type="text/css" href="assets/css/swiper-bundle.min.css">
+
     <!-- icomoon font -->
     <link rel="stylesheet" type="text/css" href="assets/css/arcik.css">
 
@@ -53,7 +56,7 @@
                         <div id="site-logo" class="clearfix">
                             <div id="site-log-inner">
                                 <a href="index.html" rel="home" class="main-logo">
-                                    <img src="assets/images/logo/logo-bixos.png" alt="arcik" width="100" height="44" data-retina="assets/images/logo/logo-header@2x.png" data-width="100" data-height="44">
+                                    <img src="assets/images/logo/logo-bixos.png" alt="bixos" width="96" height="26" data-retina="assets/images/logo/logo-header@2x.png" data-width="100" data-height="44">
                                 </a>
                             </div>
                         </div>
@@ -274,18 +277,66 @@
                         <div class="col-lg-12 col-md-12">
                             <div class="themesflat-pagination clearfix">
                                 <ul>
-                                    <li><a href="#" class="page-numbers"><i class="fas fa-angle-double-left"></i></a></li>
+                                    <li><a href="#" class="page-numbers prev-style">Prev</a></li>
                                     <li><a href="#" class="page-numbers">1</a></li>
                                     <li><a href="#" class="page-numbers current">2</a></li>
                                     <li><a href="#" class="page-numbers">3</a></li>
-                                    <li><a href="#" class="page-numbers"><i class="fas fa-angle-double-right"></i></a></li>
+                                    <li><a href="#" class="page-numbers next-style">Next</a></li>
                                 </ul>
                             </div>
 
                         </div>
-                        
 
+                    </div>
+                </div>
 
+            </section>
+            <section class="flat-brand">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="brand-slider">
+                                <div class="swiper-container carousel-3">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="slogan-logo">
+                                                <a href="#">
+                                                    <img src="assets/images/image-box/slogan.png" alt="images">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slogan-logo active">
+                                                <a href="#">
+                                                    <img src="assets/images/image-box/slogan.png" alt="images">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slogan-logo">
+                                                <a href="#">
+                                                    <img src="assets/images/image-box/slogan.png" alt="images">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slogan-logo">
+                                                <a href="#">
+                                                    <img src="assets/images/image-box/slogan.png" alt="images">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="slogan-logo">
+                                                <a href="#">
+                                                    <img src="assets/images/image-box/slogan.png" alt="images">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -294,39 +345,102 @@
 
                  <!-- Footer -->
                  <footer id="footer" class="clearfix">
-                    <div class="footer-content container-fluid">
+                    <!-- <div id="footer-top" class="container">
                         <div class="row">
-                            
-                            <div class="footer-right">
-                                <div class="content">
-                                    <h4>CONTACT</h4>
-                                    <h2>Get In Touch</h2>
-                                    <div class="widget-information link-style-3">
-                                        <ul>
-                                            <li><span class="item location"></span><span class="texts">Great Russell St, London, WC1B 3DG</span></li>
-                                            <li><span class="item phone"></span><span class="texts"><a href="tel:012345678">+ (0712) 819 79 555</a></span></li>
-                                            <li><span class="item mail"></span><span class="texts"><a href="mailto:info@example.com">info@example.com</a></span></li>
+                            <div class="col-md-8">
+                                <span class="section-title-page text-white font-weight-500">Let’s Make Something Together
+                                    Start a</span><span
+                                    class="link-style-3 text-under section-title-page font-weight-500 margin-left-10"><a
+                                        href="contact.html">conversation</a></span>
+                            </div>
+                            <div class="col-md-4">
+                                <a href="contact.html" class="button-footer arrow-btn btn-st">Hire Me Now</a>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div id="footer-widgets" class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="logo-footer margin-bottom-20">
+                                    <a href="index.html" rel="home" class="main-logo">
+                                        <img src="assets/images/logo/logo-bixos.png" alt="images">
+                                    </a>
+                                </div>
+                                <p class="text-white line-height-32 margin-bottom-20">Fusce sodales egestas neque, in pulvinar enim ultricies at. 
+                                    Vivamus vitae consequat elit. </p>
+                                <!-- <div class="widget-subcribe">
+                                    <form action="#" method="get" class="subcribe-form margin-right-100">
+                                        <input type="email" class="subcribe-form-footer" placeholder="Enter e-mail" value=""
+                                            name="s" required>
+                                        <button class="btn-subcribe-footer" type="submit" title="subcribe">GO</button>
+                                    </form>
+                                </div> -->
+                                <div class="widget widget-link widget-Newsletters widget-footer">
+                                    <form action="#" id="subscribe-form" class="form-subscribe-footer">
+                                        <div id="subscribe-content" class="footer_input-footer">
+                                            <input type="Email" id="subscribe-email" class="tb-my-input" placeholder="Enter Your Newslatter..." required>
+                                            <button type="submit" id="subscribe-button" class="button">
+                                                GO
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="footer-widgets-nav-menu text-white">
+                                    <div class="menu-1">
+                                        <h3 class="widget-title-link-wrap">Explore Links</h3>
+                                        <ul class="link-wrap">
+                                            <li><a href="services.html">Our Services</a></li>
+                                            <li><a href="services.html">Meet Our Team</a></li>
+                                            <li><a href="services.html">Our Portfolio</a></li>
+                                            <li><a href="services.html">Contact</a></li>
+                                            <li><a href="services.html">News</a></li>
+                                        </ul>
+                                        <ul class="link-wrap">
+                                            <li><a href="about.html">FAQs</a></li>
+                                            <li><a href="portfolio.html">Terms & Conditions</a></li>
+                                            <li><a href="contact.html">Privacy Policy</a></li>
+                                            <li><a href="team.html">Help</a></li>
+                                            <li><a href="services.html">Services</a></li>
                                         </ul>
                                     </div>
-                                    <div class="button-footer">
-                                        <a href="contact.html" class="button btn-style3">
-                                            <span>Get Directions</span> 
-                                        </a>
-                                    </div>
-                                    <div class="widget-links">
-                                        <ul class="links-wrap">
-                                            <li><a href="about-us.html">About Us</a></li>
-                                            <li><a href="portfolio-masonary.html">Projects</a></li>
-                                            <li><a href="pricing.html" class="active">Pricing</a></li>
-                                            <li><a href="team.html">Team</a></li>
-                                            <li><a href="faq.html">Faq</a></li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                    <!-- <div class="menu-2">
+                                        <h3 class="widget-title-link-wrap">OTHER</h3>
+                                        
+                                    </div> -->
+                                    <div class="menu-3">
+                                        <h3 class="widget-title-link-wrap">Contact</h3>
+                                        <ul class="widget-list-contact text-white link-style-2">
+                                            <li><a href="tel:012345678"
+                                                    class="meta-phone section-16px-regular-montserrat">+7
+                                                    (928)-101-23-45</a></li>
+                                            <li><a href="mailto:olux.moore@gmail.com"
+                                                    class="meta-mail section-16px-regular-montserrat">olux.moore@gmail.com</a>
+                                            </li>
+                                            <li>
+                                                <h3 class="meta-address section-16px-regular-montserrat">374 William S
+                                                    Canning Blvd,</h3>
+                                            </li>
                                         </ul>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <!-- <div class="widget-social-footer">
+                        <div class="container-fluid">
+                            <ul class="widget-social-footer-item text-center link-style-2">
+                                <li><a href="#">Fb.</a></li>
+                                <li><a href="#">Be.</a></li>
+                                <li><a href="#">Tw.</a></li>
+                                <li><a href="#">In.</a></li>
+                                <li>
+                                    <h3>Follow Me:</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div> -->
                 </footer><!-- /#footer -->
                 <!-- Bottom -->
                 
@@ -344,6 +458,9 @@
     <script src="assets/js/shortcodes.js"></script>
     <script src="assets/js/jquery.fancybox.js"></script>
     <script src="assets/js/plugin.js"></script>
+
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
 
 </body>
 

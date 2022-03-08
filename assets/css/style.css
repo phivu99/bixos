@@ -1168,7 +1168,7 @@ a:focus {
 /* Site Logo */
 
 #site-logo {
-    line-height: 100px;
+    /* line-height: 100px; */
 }
 
 /* Site Logo  style-2 */
@@ -1339,7 +1339,6 @@ a:focus {
 #main-nav .sub-menu li a:hover,
 #main-nav .sub-menu li.current-item a {
     color          : var(--primary-color6);
-    text-decoration: underline;
 }
 
 
@@ -1439,6 +1438,7 @@ a:focus {
     line-height: 14px;
     position   : absolute;
     right      : 33.4%;
+    /* right:636px; */
     margin-top : -14px;
 }
 
@@ -1454,7 +1454,7 @@ a:focus {
 .phone-header {
     color      : var(--primary-color);
     position   : absolute;
-    right      : 12.9%;
+    right: 246px;
     display    : flex;
 }
 
@@ -1554,7 +1554,7 @@ a:focus {
 .mobile-button:before,
 .mobile-button:after,
 .mobile-button span {
-    background-color  : var(--primary-color2);
+    background-color  : var(--primary-color);
     -webkit-transition: all ease 0.3s;
     -moz-transition   : all ease 0.3s;
     transition        : all ease 0.3s;
@@ -1741,40 +1741,54 @@ a:focus {
 -------------------------------------------------------------- */
 
 .themesflat-pagination {
-    margin    : 49px 25px;
+    padding-top: 28px;
     text-align: center;
+    margin-bottom: -3px;
 }
 
 .themesflat-pagination ul {
-    margin  : 0px;
+    margin-left: 7px;
     position: relative;
 }
 
 .themesflat-pagination ul li {
     display     : inline-block;
-    margin-right: 6px;
+    margin-right: 5.8px;
 }
 
 .themesflat-pagination ul li .page-numbers {
     display      : inline-block;
     font-size    : 14px;
     font-weight  : 700;
-    color        : #787878;
+    color        : #C4C4C4;
     text-align   : center;
     width        : 50px;
     height       : 50px;
-    border-radius: 50%;
-    border       : 1px solid var(--primary-color4);
+    border-radius: 5px;
+    border: 1px solid #E8E8E8;
     line-height  : 50px;
     object-fit   : cover;
-    box-shadow   : 0 8px 17px 0 #cccccc8f;
+}
+
+.themesflat-pagination .prev-style,
+.themesflat-pagination .next-style {
+    background-color: var(--primary-color2);
+    color:  var(--primary-color) !important;
+    width        : 72px !important;
+    height       : 52px !important;
+}
+
+.themesflat-pagination .prev-style::after,
+.themesflat-pagination .next-style::after {
+    content: '+';
+    margin-left: 4px;
 }
 
 .themesflat-pagination ul li .page-numbers:hover,
 .themesflat-pagination ul li .page-numbers.current {
-    background-color: var(--primary-color2);
+    background-color: var(--primary-color6);
     color           : #fff;
-    border-color    : var(--primary-color2);
+    border-color    : var(--primary-color6);
 }
 
 .themesflat-pagination ul li .next,
@@ -2829,17 +2843,18 @@ a:focus {
     letter-spacing: -0.5px;
     margin-bottom : 10px;
 }
+.flat-brand {
+    background-color: var(--primary-color6);
+    padding         : 50px 0px;
+}
 
-.flat-about .brand-slider {
-    background-color: var(--primary-color);
-    padding         : 47px 77px;
-    margin-top      : 30px;
-    transform       : translateY(90px);
-    box-shadow      : 0 2px 12px 0 #cccccc6b;
+ .brand-slider {
+    /* background-color: var(--primary-color6); */
+    padding         : 47px 0px;
 }
 
 .brand-slider .slogan-logo img {
-    opacity   : 0.3;
+    opacity   : 0.5;
     transition: all 300ms ease;
 }
 
@@ -5405,4 +5420,230 @@ a:focus {
 
 .fa-times:before {
     color: var(--primary-color);
+}
+
+/* footer */
+#footer {
+    background: #222429;
+    background-size : cover;
+    position        : relative;
+    z-index         : 1;
+    padding         : 130px 0 48px 0;
+}
+
+#footer-top {
+    padding-bottom: 129px;
+}
+
+#footer .button-footer {
+    float       : right;
+    margin-top  : 35px;
+    margin-right: 4px;
+}
+
+#footer .logo-footer img {
+    width: 96px;
+}
+
+#footer .subcribe-form-footer {
+    position        : relative;
+    padding         : 17px 60px 20px 2px;
+    border          : none;
+    background-color: unset;
+    border-bottom   : solid 2px;
+    border-radius   : 0;
+}
+
+#footer .subcribe-form-footer::placeholder {
+    font-size: 17px;
+}
+
+#footer .btn-subcribe-footer {
+    position        : absolute;
+    right           : 109px;
+    background-color: unset;
+}
+
+/* #footer .btn-subcribe-footer::after {
+    content    : "\e92b";
+    font-family: "icomoon";
+    font-size  : 15px;
+    color      : var(--primary-color);
+} */
+.form-subscribe-footer button {
+    font-size: 20px;
+    color: #ffffff;
+    display: inline-block;
+    border: none;
+    outline: none;
+    padding: 6px 21px 4px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -8px;
+    transition: all 500ms ease;
+    height: 100%;
+}
+.form-subscribe-footer{
+    position: relative;
+    display: block;
+}
+
+.form-subscribe-footer input{
+    border: none;
+    outline: none;
+    background-color: #fff;
+    padding: 14px 30px;
+}
+.form-subscribe-footer input{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    line-height: 32px;
+    color: #1D1D1D;
+}
+.form-subscribe-footer button:hover{
+    background-color: var(--primary-color6);
+    color: var(--primary-color);
+    border          : 0px solid var(--primary-color6);
+}
+
+#footer .footer-widgets-nav-menu {
+    display: flex;
+    display: -webkit-flex;
+}
+
+#footer .menu-1,
+#footer .menu-2 {
+    width  : 50%;
+    padding: 37px 10px 10px 36px;
+}
+
+#footer .menu-2 {
+    padding: 37px 10px 10px 27px;
+}
+
+#footer .menu-3 {
+    width  : 50%;
+    padding: 37px 0px 10px 33px;
+}
+
+#footer .footer-widgets-nav-menu .widget-title-link-wrap {
+    font-size  : 20px;
+    font-weight: 400;
+    margin     : 8px 0;
+}
+
+#footer .menu-3 li {
+    margin-bottom: 4px;
+}
+
+#footer .widget-list-contact {
+    margin-top: 21px;
+}
+
+#footer .widget-list-contact li {
+    border-bottom: solid 1px #3d3d3d;
+}
+
+#footer .widget-list-contact li:last-child {
+    border-bottom: unset;
+}
+
+/* #footer .link-wrap li::before {
+    content           : "\e92b";
+    font-family       : "icomoon";
+    font-size         : 7px;
+    color             : var(--primary-color);
+    margin-right      : 7%;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition   : all 0.3s ease-in-out;
+    -ms-transition    : all 0.3s ease-in-out;
+    -o-transition     : all 0.3s ease-in-out;
+    transition        : all 0.3s ease-in-out;
+} */
+
+#footer .link-wrap li a {
+    position   : relative;
+    font-size  : 16px;
+    line-height: 43px;
+    color      : #fff;
+}
+
+#footer .link-wrap {
+    margin-top : 18px;
+    margin-left: -2px;
+    width: 48%;
+    display: inline-block;
+}
+
+#footer .link-wrap li a::before {
+    position        : absolute;
+    content         : "";
+    width           : 100%;
+    height          : 1px;
+    top             : 100%;
+    left            : 0;
+    background      : var(--primary-color);
+    transition      : transform 0.3s;
+    transform       : scaleX(0);
+    transform-origin: left;
+}
+
+#footer .link-wrap li a:hover::before,
+#footer .link-wrap li:hover::before,
+#footer .link-wrap li:hover {
+    transform       : scaleX(1);
+    transform-origin: left;
+    color           : var(--primary-color);
+    margin-right    : 11%;
+}
+
+#footer .meta-phone::before,
+#footer .meta-mail::before,
+#footer .meta-address::before,
+.list-note-content li::before {
+    font-family : 'FontAwesome';
+    color       : #fff;
+    margin-right: 20px;
+}
+
+#footer .meta-phone::before {
+    content: "\f095";
+}
+
+#footer .meta-mail::before {
+    content: "\f0e0";
+}
+
+#footer .meta-address::before {
+    content: "\f041";
+}
+
+.widget-social-footer {
+    position: absolute;
+    top     : 52.3%;
+    left    : 4.5%;
+}
+
+.widget-social-header {
+    position: absolute;
+    top     : 37.9%;
+    right   : 2.1%;
+    color   : var(--primary-color6);
+    z-index : 200;
+}
+
+.widget-social-footer-item,
+.widget-social-footer-item h3,
+.flat-about .subtitle-about {
+    font-family: 'DM Sans', sans-serif;
+    font-size  : 17px;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+.widget-social-footer-item h3 {
+    margin-top: 20px;
+    transform : rotate(-90deg);
+    color     : var(--primary-color);
 }

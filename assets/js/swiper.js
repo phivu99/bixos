@@ -111,7 +111,7 @@ var swiper =  new Swiper(".carousel-3", {
         },
         1024: {
             slidesPerView: 6,
-            spaceBetween: 30,
+            spaceBetween: 74,
         },
     },
 });
