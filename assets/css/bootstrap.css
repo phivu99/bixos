@@ -9150,11 +9150,11 @@ a.bg-inverse:focus, a.bg-inverse:hover {
 }
 
 .text-muted {
-  color: #636c72 !important;
+  color:  #FFFFFFB2 !important;
 }
 
 a.text-muted:focus, a.text-muted:hover {
-  color: #4b5257 !important;
+  color:  #FFFFFFB2 !important;
 }
 
 .text-primary {
@@ -9190,11 +9190,11 @@ a.text-warning:focus, a.text-warning:hover {
 }
 
 .text-danger {
-  color: #d9534f !important;
+  color: #FF4040 !important;
 }
 
 a.text-danger:focus, a.text-danger:hover {
-  color: #c9302c !important;
+  color: #FF4040 !important;
 }
 
 .text-gray-dark {

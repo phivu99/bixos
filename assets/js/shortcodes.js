@@ -176,6 +176,19 @@
             return false;
         });
     };
+    
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 300) {
+            $('#scroll-top').addClass('show');
+        } else {
+            $('#scroll-top').removeClass('show');
+        }
+    });
+
+    $('#scroll-top').on('click', function () {
+        $('html, body').animate({ scrollTop: 0 }, 1000, 'easeInOutExpo');
+        return false;
+    });
 
     new WOW().init();
 
