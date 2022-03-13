@@ -89,14 +89,14 @@
 }
 
 .btn-style4 {
-    background-color: var(--primary-color2);
-    border          : 1px solid var(--primary-color2);
+    background-color: var(--primary-color6);
+    border          : 1px solid var(--primary-color6);
     color           : var(--primary-color);
 }
 
 .btn-style4:hover {
-    background-color: var(--primary-color6);
-    border          : 1px solid var(--primary-color6);
+    background-color: var(--primary-color2);
+    border          : 1px solid var(--primary-color2);
     color           : var(--primary-color);
 }
 
@@ -157,6 +157,10 @@ video::before {
     animation-delay        : 0.3s;
 }
 
+.font {
+    font-family: 'Open Sans', sans-serif;
+}
+
 /* widget 
 ------------------------------------------------------*/
 /* socials */
@@ -212,7 +216,7 @@ video::before {
 }
 
 .widget.search input {
-    background-color: #f5f5f5;
+    background-color: var(--primary-color);
     padding         : 20px 28px;
 }
 
