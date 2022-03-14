@@ -201,8 +201,14 @@
   #footer .widget h5 {
     margin-bottom: 40px !important;
   }
- 
 
+  .flat-blog-details .post {
+    margin-bottom: 50px;
+  }
+  .flat-blog-details #contactform .btn-submit-comment {
+    margin-top: 30px;
+  }
+  
   .flat-blog .inner-content,
   .flat-blog-details .inner-content,
   .flat-fun-fact,
@@ -549,27 +555,47 @@
 /* ------------------------------------------ */
 /* All Mobile Sizes */
 @media only screen and (max-width: 767px) {
+
   #footer {
     padding: 100px 0;
   }
-
-  /* .footer-widgets-nav-menu  {
-    display: inline-block !important;
-  }
-
-  #footer .footer-widgets-nav-menu .menu-1,
-  #footer .footer-widgets-nav-menu .menu-2 {
-    width: 100% ;
-  } */
 
   .flat-title-page .breadcrumbs h1 {
     font-size: 45px;
   }
 
-  
   .footer-widgets-nav-menu .menu-1 {
     margin-bottom: 25px;
   }
+  /* blog */
+  #comments .comment-list .comment-01,
+  .flat-blog-details .post .media-2,
+  .flat-blog-details .post .text {
+    margin-bottom: 30px;
+  }
+  .flat-blog-details .post .post-image {
+    padding: 30px 15px;
+    margin-bottom: 30px;
+  }
+  .flat-blog-details .post .infor-row .tags a {
+    padding: 10px 6px;
+  }
+  #comments .comment-list .comment-avatar {
+    margin-bottom: 20px;
+  }
+
+  .flat-blog-details #contactform .style-text {
+    width: 100%;
+    display: contents;
+  }
+  .flat-blog-details #contactform .site-wrap,
+  .flat-blog-details #contactform .name-wrap {
+    padding-bottom: 0 0 10px 0 !important;
+  }
+  .flat-blog-details #contactform input {
+    margin-bottom: 10px;
+  }
+
 
 
   #footer .footer-right,
@@ -668,12 +694,6 @@
     padding: 0 15px;
   }
 
-  .flat-blog-details .post .quote-details,
-  .flat-blog-details #contactform,
-  .flat-about .brand-slider,
-  .flat-testimonials .feedback-box {
-    padding: 20px;
-  }
 
   .flat-services .services-content.right,
   .flat-services .services-content.left,
@@ -699,8 +719,7 @@
     margin-bottom: 15px;
   }
 
-  .flat-blog-details .post .infor-row .tags,
-  .flat-blog-details #contactform,
+ 
   .flat-services .services-post-right,
   .flat-services .services-post-left,
   .flat-team .team-content,

@@ -217,18 +217,22 @@ video::before {
 
 .widget.search input {
     background-color: var(--primary-color);
-    padding         : 20px 28px;
 }
 
 /* search */
 .widget.search .search-form {
     position: relative;
+    z-index: 99;
+    
+}
+.widget.search .search-form .search-field {
+    padding: 16px 19px;
 }
 
 .widget.search input::placeholder {
     font-size : 12px;
-    font-style: italic;
-    color     : var(--primary-color4);
+    color     : rgba(200, 200, 200, 1);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .search-icon::after {
@@ -243,26 +247,25 @@ video::before {
     font-size  : 16px;
 }
 
-.widget.search .search-submit {
-    padding         : 22px;
-    font-weight     : 300;
-    background-color: var(--primary-color2);
-}
-
-.widget.search .search-submit:hover {
-    background-color: var(--primary-color6);
+.widget.search .search-submit:hover .search-icon{
+    color: var(--primary-color6);
 }
 
 .widget.search .search-submit {
     position: absolute;
-    right   : 0;
-    top     : 0;
+    right   : 13px;
+    top     : 20px;
 }
 
 /* recent news */
+
+.widget.recent-news {
+    margin-bottom: 33px;
+}
+
 .widget.recent-news li {
-    padding-bottom: 34px;
-    border-bottom : 1px solid var(--primary-color3);
+    padding-bottom: 18px;
+    border-bottom : 1px solid var(--primary-color7);
 }
 
 .widget.recent-news li:last-child {
@@ -271,14 +274,42 @@ video::before {
 }
 
 .widget.recent-news li:not(:first-of-type) {
-    padding-top: 30px;
+    padding-top: 17px;
+}
+
+.widget.recent-news li .meta {
+    margin-bottom: 16px;
+}
+.widget.recent-news h5 {
+    line-height: 20px;
+    margin-bottom: 14px;
+}
+
+.widget.recent-news .entry-author {
+    margin-right: 10px !important;
+    margin-bottom: 10px;
+}
+.widget.recent-news .entry-author::before  {
+    padding-right: 5px;
+}
+
+.widget.recent-news .entry-button{
+    font-size: 14px;
+    font-weight: 500;
+    color    : var(--primary-color4);
+}
+
+.widget.recent-news .entry-button::after {
+    content: '+';
+}
+.widget.recent-news .entry-button:hover {
+    color    : var(--primary-color6);
 }
 
 .widget.recent-news .thumb {
-    width       : 80px;
     float       : left;
     overflow    : hidden;
-    margin-right: 19px;
+    margin: 3px 20px 20px 1px;
 }
 
 .widget.recent-news .thumb img {
@@ -300,16 +331,8 @@ video::before {
 /* categories */
 .widget.widget-categories li {
     position        : relative;
-    display         : -webkit-box;
-    display         : -moz-box;
-    display         : -ms-flexbox;
-    display         : -webkit-flex;
-    display         : flex;
-    align-items     : center;
-    justify-content : space-between;
     background-color: var(--primary-color3);
-    padding-left    : 30px;
-    margin-bottom   : 9.9px;
+    margin-bottom   : 30.2px;
 }
 
 .widget.widget-categories li .number {
@@ -323,14 +346,24 @@ video::before {
     transition        : all 0.3s ease-in-out;
 }
 
-.widget.widget-categories li a,
-.widget.widget-categories li .number {
+.widget.widget-categories li a {
     color: var(--primary-color4);
-}
+    font-size: 16px;
 
+}
+.widget.widget-categories li a::before {
+    content    : '\f0da';
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--primary-color8);
+    margin-right: 9px;
+}
+.widget.widget-categories li:hover a::before,
+.widget.widget-categories li.active a::before,
 .widget.widget-categories li:hover a,
 .widget.widget-categories li.active a {
-    color: var(--primary-color2);
+    color: var(--primary-color6);
 }
 
 .widget.widget-categories li:hover .number,
@@ -341,27 +374,32 @@ video::before {
 
 /* tags */
 .widget.tags_cloud .tags_cloud_inner {
-    margin: -5px -5px;
+    margin: -1px -2px;
 }
 
 .widget.tags_cloud a {
     display           : inline-block;
     font-size         : 12px;
-    padding           : 9px 21px;
-    background-color  : var(--primary-color3);
-    margin            : 5px;
+    padding           : 14px 19.6px;
+    background-color  : var(--primary-color6);
+    margin            : 3.8px 2.5px 5.5px ;
     color             : var(--primary-color4);
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition   : all 0.3s ease-in-out;
     -ms-transition    : all 0.3s ease-in-out;
     -o-transition     : all 0.3s ease-in-out;
     transition        : all 0.3s ease-in-out;
+    border-radius: 5px;
+}
+
+.widget.tags_cloud .tags_cloud_inner a {
+    background-color  : var(--primary-color);
 }
 
 .widget.tags_cloud a:hover,
 .widget.tags_cloud a.active {
     color           : var(--primary-color);
-    background-color: var(--primary-color2);
+    background-color: var(--primary-color6);
 }
 
 /* widget infomation */
