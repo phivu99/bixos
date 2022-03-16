@@ -5,8 +5,7 @@
   * Author URI: http://www.themesflat.com
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300;400;500;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "responsive.css";
@@ -1233,9 +1232,9 @@ a:focus {
     bottom: 32px;
 }
 
-#main-nav.style-2>.menu>li.menu-item-has-children>a::after {
+/* #main-nav.style-2>.menu>li.menu-item-has-children>a::after {
     color: var(--primary-color);
-}
+} */
 
 /* /style-2 */
 
@@ -1252,9 +1251,8 @@ a:focus {
     transition      : transform 500ms ease;
 }
 
-#main-nav>ul>li.current-menu-item>a {
-    color: var(--primary-color6);
-}
+/* #main-nav>.menu>li.menu-item-has-children>a:hover::after, */
+
 
 #main-nav.home-2>ul>li.current-menu-item>a {
     color: var(--primary-color);
@@ -1272,6 +1270,11 @@ a:focus {
     font-weight: 700;
     margin-left: 4px;
     color      : var(--primary-color);
+}
+
+#main-nav>ul>li.current-menu-item>a::after,
+#main-nav>ul>li.current-menu-item>a {
+    color: var(--primary-color6) !important;
 }
 
 /* Sub Menu */
@@ -1443,8 +1446,8 @@ a:focus {
 
 .tf-button {
     position: absolute;
-    right: 50px;
-    top:31px;
+    right   : 50px;
+    top     : 47px;
 }
 
 .icon-header {
@@ -1750,6 +1753,9 @@ a:focus {
     background-color: #000000c9;
 }
 
+.tf-title {
+    font-weight: 400;
+}
 /* Pagination
 -------------------------------------------------------------- */
 
@@ -1862,7 +1868,7 @@ a:focus {
     position: absolute;
     opacity: 0.5;
 }
-
+.elip-header,
 .flat-title-page .elip-header {
     position: absolute;
     top:0;
@@ -1877,6 +1883,14 @@ a:focus {
     position: absolute;
     top: 35.5%;
     left: 21.3%
+}
+.elip-header3 {
+    position: absolute;
+    top : 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.7;
+    
 }
 
 .flat-title-page .breadcrumbs {

@@ -9145,7 +9145,7 @@ a.bg-inverse:focus, a.bg-inverse:hover {
   font-style: italic;
 }
 
-.text-white {
+/* .text-white {
   color: #fff !important;
 }
 
@@ -9203,7 +9203,7 @@ a.text-danger:focus, a.text-danger:hover {
 
 a.text-gray-dark:focus, a.text-gray-dark:hover {
   color: #101112 !important;
-}
+} */
 
 .text-hide {
   font: 0/0 a;

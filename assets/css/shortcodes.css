@@ -28,8 +28,7 @@
     color           : var(--primary-color);
     font-weight       : 700;
     line-height       : 27px;
-    letter-spacing    : 0.1px;
-    padding           : 14.4px 34px;
+    padding           : 20px 34px;
     -webkit-transition: all 0.3s ease;
     -moz-transition   : all 0.3s ease;
     -ms-transition    : all 0.3s ease;
@@ -42,7 +41,7 @@
 }
 
 .button:hover {
-    color           : var(--primary-color2);
+    color           : var(--primary-color6);
     background-color: var(--primary-color);
     border          : 1px solid var(--primary-color);
 }
@@ -490,25 +489,30 @@ video::before {
 
 
 /* slider */
-
 .slider {
-    position        : relative;
-    background-color: var(--primary-color5);
+    padding-top: 364px;
+    padding-bottom: 644px;
+    background: url("../images/image-slider/slider-01.jpg")  ; 
+    z-index: 0;
+    background-size: cover;
+    position: relative;
+    /* height: 1008px; */
 }
 
-.slider .back-ground img {
-    height: 1008px;
-    max-width: 100%;
-}
-
-.slider .overlay-slider{
-    background: rgba(28, 30, 34, 0.4);
+.overlay-slider{
+    background: rgba(28, 30, 34, 0.3);
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     position: absolute;
-    /* opacity: 0.5; */
+}
+
+.elip-slider {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
 }
 
 .slider .mark-slider {
@@ -529,7 +533,7 @@ video::before {
 }
 
 .slider .heading {
-    margin-bottom: 70px;
+    margin-bottom: 71px;
 }
 
 .slider .content h1 {
@@ -544,10 +548,14 @@ video::before {
     margin-left: 2px;
 }
 
+.slider .button {
+    margin-left: 2px;
+}
+
 .video-slider {
     position   : relative;
     display    : inline-block;
-    margin-left: 27px;
+    margin-left: 30px;
 }
 
 .video-slider::after {
@@ -556,8 +564,8 @@ video::before {
     color             : var(--primary-color);
     padding           : 22px;
     border-radius     : 50%;
-    background-color  : rgba(255, 255, 255, 0);
-    border            : 1px solid var(--primary-color5);
+    background-color  : rgba(255, 255, 255, 0.05);
+    border            : 1px solid rgba(255, 255, 255, 0.05);;
     object-fit        : cover;
     font-weight       : 700;
     -webkit-transition: all 0.3s ease-in-out;
@@ -846,20 +854,14 @@ video::before {
     transition-delay  : 1300ms;
 }
 
-/* slider button  */
-.slider .button-custom-slider {
-    position: absolute;
-    bottom  : 8px;
-    right   : 24.5%;
-}
-
 .swiper-button-prev.button-slide-custom-prev,
 .swiper-button-next.button-slide-custom-next {
     height            : 60px;
     width             : 60px;
     line-height       : 60px;
+    border-radius     : 50px;
     text-align        : center;
-    background-color  : var(--primary-color);
+    background-color  : rgba(255,255,255,0.2);
     box-shadow        : 0 2px 12px 0 #cccccc6b;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition   : all 0.3s ease-in-out;
@@ -868,37 +870,28 @@ video::before {
     transition        : all 0.3s ease-in-out;
 }
 
-.swiper-button-prev.button-slide-custom-prev {
-    border-right: 2px solid var(--primary-color3);
-}
-
 .swiper-button-prev.button-slide-custom-prev::after,
 .swiper-button-next.button-slide-custom-next::after {
-    content    : '\f177';
+    content    : '\f060';
     font-family: "Font Awesome 5 Pro";
     font-weight: 300;
-    color      : var(--primary-color4);
+    color      : var(--primary-color);
     font-size  : 18px;
 }
 
 .swiper-button-next.button-slide-custom-next::after {
-    content: '\f178';
-    color  : var(--primary-color2);
-}
-
-.swiper-button-next.button-slide-custom-next {
-    right: unset;
-    left : 70px;
+    content: '\f061';
+    color  : var(--primary-color);
 }
 
 .swiper-button-next.button-slide-custom-next:hover,
 .swiper-button-next.button-slide-custom-next.active {
-    background-color: var(--primary-color2);
+    background-color: var(--primary-color6) ;
 }
 
 .swiper-button-next.swiper-button-disabled,
 .swiper-button-prev.swiper-button-disabled {
-    opacity: 0.7 !important;
+    opacity: 0.4 !important;
 }
 
 .swiper-button-next.button-slide-custom-next:hover::after,
@@ -907,8 +900,7 @@ video::before {
 }
 
 .swiper-button-prev.swiper-button-prev:hover {
-    background-color: var(--primary-color2);
-    border-right    : 2px solid var(--primary-color2);
+    background-color: var(--primary-color6);
 }
 
 .swiper-button-prev.swiper-button-prev:hover::after {
