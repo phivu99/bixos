@@ -1271,7 +1271,7 @@ a:focus {
     font-family: 'Font Awesome 5 Pro';
     font-weight: 700;
     margin-left: 4px;
-    color      : var(--primary-color4);
+    color      : var(--primary-color);
 }
 
 /* Sub Menu */
@@ -1853,7 +1853,7 @@ a:focus {
     background-position: center;
     padding: 294px 0 154px 0;
 }
-.flat-title-page .overlay-page {
+.overlay-page {
     background-color: #222429;
     left: 0;
     top: 0;
