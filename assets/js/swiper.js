@@ -87,7 +87,7 @@ var swiper =  new Swiper(".carousel-2", {
             spaceBetween: 30,
         },
         1024: {
-            slidesPerView: 3,
+            slidesPerView: 4,
             spaceBetween: 30,
         },
     },
@@ -117,7 +117,7 @@ var swiper =  new Swiper(".carousel-3", {
 });
 var swiper =  new Swiper(".carousel-4", {
     autoplay: {
-        delay: 2000,
+        delay: 6000,
         disableOnInteraction: false,
     },
     slidesPerView: 1,   
@@ -133,8 +133,8 @@ var swiper =  new Swiper(".carousel-4", {
             spaceBetween: 30,
         },
         1024: {
-            slidesPerView: 4.65,
-            spaceBetween: 40,
+            slidesPerView: 4,
+            spaceBetween: 30,
         },
     },
 });

@@ -1038,7 +1038,7 @@ a:focus {
 
 .link-style-5 a {
     text-decoration   : none;
-    color         : var(--primary-color4);
+    color             : rgba(34, 36, 41, 0.2) ;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition   : all 0.3s ease-in-out;
     -ms-transition    : all 0.3s ease-in-out;
@@ -1048,13 +1048,14 @@ a:focus {
 
 .link-style-5 a:hover,
 .link-style-5 a:focus {
-    color             : var(--primary-color6);
+    color         : var(--primary-color6);
     outline           : 0;
     -webkit-transition: all 0.3s ease-in-out;
     -moz-transition   : all 0.3s ease-in-out;
     -ms-transition    : all 0.3s ease-in-out;
     -o-transition     : all 0.3s ease-in-out;
     transition        : all 0.3s ease-in-out;
+    
 }
 
 .text-color-1 {
@@ -1753,7 +1754,7 @@ a:focus {
     background-color: #000000c9;
 }
 
-.tf-title {
+.style-title {
     font-weight: 400;
 }
 /* Pagination
@@ -2338,7 +2339,7 @@ a:focus {
     padding         : 49.5px 0px;
 }
 
- .brand-slider {
+.brand-slider {
     padding: 47px 0px;
 }
 
@@ -2352,6 +2353,130 @@ a:focus {
     opacity: 1;
 }
 
+/* service */
+
+.flat-service {
+    background-color: var(--primary-color5) ;
+}
+
+.flat-service .service-heading {
+    text-align   : center;
+    margin-bottom: 46px;
+    margin-top   : -2px;
+    margin-left  : 1px;
+}
+
+.tf-sub-title {
+    font-size    : 14px;
+    font-weight  : 500;
+    color        : var(--primary-color4);
+    margin-bottom: 16px;
+}
+.tf-title {
+    text-transform: uppercase;
+    line-height   : 52px;
+}
+
+.flat-service .service-post {
+    background-color: var(--primary-color) ;
+    display: block;
+    position: relative;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    border-radius: 5px;
+    /* margin: 0 15px 0 15px; */
+}
+
+.flat-service .service-post::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: var(--primary-color6);
+    height: 6px;
+    width: 6px;
+    border-radius: 2.6px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.25s ease-out;
+}
+.flat-service .service-post:hover:before {
+    transform: scale(21);
+}
+
+.flat-service .service-post .media {
+    justify-content: center;
+    padding-top: 18px;
+}
+
+.flat-service .service-post .content {
+    text-align: center;
+    padding: 15px 15px 42px 16px;
+    
+}
+
+.flat-service .service-post .content h3 {
+    font-weight: 500;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+
+.flat-service .service-post .content p {
+    margin-bottom: 32px;
+}
+
+.flat-service .service-post .readmore::after {
+    content    : '\f178';
+    font-size  : 24px;
+    font-family: "Font Awesome 5 Pro";
+    color: rgba(34, 36, 41, 0.2);
+}
+
+.flat-service .service-post::after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color6);
+    transform: scale(0, 1);
+    transform-origin: right center;
+    transition: transform 500ms ease;
+}
+
+.flat-service .service-post:hover::after {
+    transform: scale(1, 1);
+    transform-origin: left center;
+}
+
+.flat-service .service-post:hover .readmore::after{
+    color: var(--primary-color6) ;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Trusted */
+
+.flat-trusted .trusted-heading {
+    padding-top: 59px;
+    padding-right: 60px;
+    margin-bottom: 31px;
+}
+.flat-trusted h3{
+    line-height: 30px;
+    margin-bottom: 11px;
+}
+.flat-trusted .media-2 {
+    text-align: right;
+    margin-top: -64px;
+}
+.mark-page {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
 /* Footer
 -------------------------------------------------------------- */
@@ -2431,6 +2556,9 @@ a:focus {
     right: 0px;
     transition: all 500ms ease;
     height: 100%;
+}
+.form-subscribe-footer .button::after {
+    content    : '';
 }
 
 .form-subscribe-footer button:hover{

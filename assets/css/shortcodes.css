@@ -580,6 +580,9 @@ video::before {
     border          : 1px solid var(--primary-color6);
 }
 
+.slider .swiper-container.mainslider {
+    overflow: inherit;
+}
 /* slider home-2 */
 
 .slider-style-2 {
@@ -912,6 +915,28 @@ video::before {
     margin          : 0 -15px;
     padding         : 163px 182px 96px 182px;
     margin-top      : -100px;
+}
+
+/* swiper-pagination */
+
+.flat-service .swiper-pagination{
+    width: 100%;
+    margin-top: 58px;
+    margin-left: -5px;
+    position: relative;
+    bottom: 0 !important;
+}
+
+.flat-service .swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    background: #E8E8E8;
+    opacity: 1;
+    margin: 0 5px !important;
+}
+
+.flat-service .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background-color: var(--primary-color6);
 }
 
 /* circle progress */
