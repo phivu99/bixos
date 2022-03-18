@@ -964,20 +964,18 @@ video::before {
 
 /* donat progress */
 .progress-bar {
-    margin: 37px 0;
+    margin: 38.5px 0 21px;
 }
 
 .progress-title-holder {
-    padding-bottom: 16px;
+    padding-bottom: 11px;
     position      : relative;
 }
 
 .progress-title {
     z-index       : 100;
-    font-family   : 'Poppins', sans-serif;
     font-weight   : 600;
     font-size     : 18px;
-    letter-spacing: -0.6px;
 }
 
 .progress-number-wrapper {
@@ -987,36 +985,46 @@ video::before {
 
 .progress-number-mark {
     margin-bottom    : 4px;
-    background-color : var(--primary-color2);
-    padding          : 0 12px;
+    background-color : var(--primary-color6);
+    padding          : 0 6px;
     position         : absolute;
-    bottom           : -19px;
+    top              : 1px;
     -moz-transform   : translateX(-50%);
     -o-transform     : translateX(-50%);
     transform        : translateX(-50%);
     -ms-transform    : translateX(-50%);
     -webkit-transform: translateX(-50%);
 }
+.progress-number-mark::before {
+    content: "";
+    position: absolute;
+    bottom: -6px;
+    left: 10px;
+    border-top: 6px solid var(--primary-color6);
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
 
 .progress-number-wrapper,
 .progress-number-mark {
-    font-family   : 'Roboto', sans-serif;
-    font-size     : 14px;
-    line-height   : 28px;
-    height        : 28px;
-    font-weight   : 700;
+    font-family   : 'Jost', sans-serif;
+    font-size     : 12px;
+    line-height   : 25px;
+    height        : 25px;
+    font-weight   : 600;
     font-style    : normal;
     text-transform: none;
     color         : #ffffff;
+    border-radius: 5px;
 }
 
 .progress-content-outter {
-    height          : 2px;
+    height          : 5px;
     background-color: #e8e8e8;
 }
 
 .progress-content {
-    height          : 2px;
+    height          : 5px;
     background-color: var(--primary-color2);
     width           : 0%;
     /* Initial value */
