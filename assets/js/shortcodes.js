@@ -228,10 +228,10 @@
         $('.couter').appear(function () {
             $('.chart').easyPieChart({
                 easing: 'easeOut',
-                lineWidth: 1,
-                size: 120,
+                lineWidth: 5,
+                size: 110,
                 scaleColor: false,
-                barColor: '#333333',
+                barColor: '#FF4040',
                 trackColor: '#ececec',
                 animate: 5000,
                 onStep: function (from, to, percent) {

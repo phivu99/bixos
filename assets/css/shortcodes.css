@@ -940,26 +940,44 @@ video::before {
 }
 
 /* circle progress */
-.progress-about .couter .chart {
+.flat-skill .progress-box1 {
+    float: left;
+    margin-left: 30px;
+   
+}
+.flat-skill .progress-box2 {
+    margin-left: 83px;
+    float: left;
+}
+.flat-skill .progress-skill .couter .chart {
     position: relative;
     display : inline-block;
 }
+.flat-skill .content h3{
+    margin-left: -7px;
+    font-weight: 600;
+}
 
-.progress-about .couter .chart span.percent {
+.progress-skill {
+    margin-bottom: 17px;
+}
+.progress-skill .couter .chart span.percent {
     position   : absolute;
     top        : 50%;
     left       : 50%;
     transform  : translate(-50%, -50%);
-    font-family: 'Poppins', sans-serif;
-    font-size  : 49px;
-    font-weight: 300;
+    font-size  : 12px;
+    font-weight: 600;
     display    : inline-block;
-    color      : var(--primary-color2);
+    padding: 5px 4px;
+    border-radius: 5px;
+    color      : var(--primary-color);
+    background-color: var(--primary-color6);
 }
 
-.progress-about .couter .chart span.percent::after {
+.progress-skill .couter .chart span.percent::after {
     content  : '%';
-    font-size: 15px;
+    /* font-size: 15px; */
 }
 
 /* donat progress */
@@ -995,6 +1013,8 @@ video::before {
     -ms-transform    : translateX(-50%);
     -webkit-transform: translateX(-50%);
 }
+.progress-skill .couter .chart span.percent::before,
+.flat-work .work-post .tags span::before,
 .progress-number-mark::before {
     content: "";
     position: absolute;
