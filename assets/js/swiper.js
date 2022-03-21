@@ -42,7 +42,7 @@ var swiper =  new Swiper(".carousel", {
         disableOnInteraction: false,
     },
     slidesPerView: 1,
-    loop: true, 
+    loop: false, 
     spaceBetween: 30,
     navigation: {
         clickable: true,
@@ -59,8 +59,8 @@ var swiper =  new Swiper(".carousel", {
             spaceBetween: 30,
         },
         1024: {
-            slidesPerView: 3,
-            spaceBetween: 30,
+            slidesPerView: 1,
+            spaceBetween: 0,
         },
     },
 });

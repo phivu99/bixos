@@ -5079,6 +5079,7 @@ a.badge:focus, a.badge:hover {
 }
 
 .media {
+
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -5087,6 +5088,9 @@ a.badge:focus, a.badge:hover {
   -webkit-align-items: flex-start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+.media img {
+  border-radius: 5px;
 }
 
 .media-body {
