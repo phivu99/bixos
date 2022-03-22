@@ -65,6 +65,7 @@
 .btn-style2:hover {
     background-color: var(--primary-color6);
     border          : 1px solid var(--primary-color6);
+    color           : var(--primary-color);
 }
 
 .btn-style3 {
