@@ -2008,12 +2008,14 @@ a:focus {
 .flat-blog-grid .grid-post {
     margin-bottom: 8px;
 }
+
 .flat-work .work-post .media,
 .flat-blog-grid .grid-post .media {
     position: relative;
     width: 100%;
     background: var(--primary-color6);
     border-radius: 10px;
+    z-index: -1;
 }
 .flat-work .work-post .media img,
 .flat-blog-details .side-bar ul li .thumb img,
@@ -2514,7 +2516,7 @@ a:focus {
     margin-left: 28px;
     margin-top: 7px;
 }
-.trusted-years {
+.flat-trusted .media .trusted-years {
     position: absolute;
     right: 29px;
     top: -70px;
@@ -2527,7 +2529,7 @@ a:focus {
     outline: 2px dashed rgba(255, 255, 255, 0.3);
 }
 
-.trusted-years h5{
+.flat-trusted .media .trusted-years h5{
     padding: 50px 33px;
     line-height: 20px;
     color: var(--primary-color);
@@ -2572,7 +2574,7 @@ a:focus {
     padding-bottom    : 311px;
 }
 
-.flat-counter .col-lg-3 {
+.flat-counter .count-row {
     border-bottom: solid 2px rgba(255, 255, 255, 0.1);
     
 }
@@ -2708,6 +2710,7 @@ a:focus {
 }
 .flat-skill .skill-heading h2 {
     margin-bottom: 8px;
+    padding-right: 70px
 }
 .flat-skill .skill-heading p {
     margin-bottom: 39px;

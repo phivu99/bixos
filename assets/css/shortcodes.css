@@ -944,10 +944,9 @@ video::before {
 .flat-skill .progress-box1 {
     float: left;
     margin-left: 30px;
-   
+    margin-right: 83px;
 }
-.flat-skill .progress-box2 {
-    margin-left: 83px;
+.flat-skill .progress-box2 { 
     float: left;
 }
 .flat-skill .progress-skill .couter .chart {
