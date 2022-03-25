@@ -2490,7 +2490,7 @@ a:focus {
     margin-left  : 1px;
 }
 
-.flat-service .service-post {
+.flat-service .service-post.style-post {
     background-color: var(--primary-color) ;
     display         : block;
     position        : relative;
@@ -2500,7 +2500,7 @@ a:focus {
     border-radius   : 5px;
 }
 
-.flat-service .service-post::before {
+.flat-service .service-post.style-post::before {
     content         : "";
     position        : absolute;
     z-index         : -1;
@@ -2514,7 +2514,7 @@ a:focus {
     transform-origin: 50% 50%;
     transition      : transform 0.25s ease-out;
 }
-.flat-service .service-post:hover:before {
+.flat-service .service-post.style-post:hover:before {
     transform: scale(21);
 }
 
@@ -2525,14 +2525,14 @@ a:focus {
 
 .flat-service .service-post .content {
     text-align: center;
-    padding   : 15px 15px 42px 16px;
-    
+    padding   : 15px 15px 42px 16px; 
 }
 
 .flat-service .service-post .content h3 {
     font-weight  : 500;
     line-height  : 26px;
     margin-bottom: 15px;
+    
 }
 
 .flat-service .service-post .content p {
@@ -2546,7 +2546,7 @@ a:focus {
     color      : rgba(34, 36, 41, 0.2);
 }
 
-.flat-service .service-post::after {
+.flat-service .service-post.style-post::after {
     content         : "";
     width           : 100%;
     height          : 4px;
@@ -2559,7 +2559,7 @@ a:focus {
     transition      : transform 500ms ease;
 }
 
-.flat-service .service-post:hover::after {
+.flat-service .service-post.style-post:hover::after {
     transform       : scale(1, 1);
     transform-origin: left center;
 }
@@ -2569,6 +2569,29 @@ a:focus {
     transition: all 0.3s ease-in-out;
 }
 
+/* service home 2 */
+.flat-service.home2 {
+    background-image  : url(../images/background-section/bg-service.jpg);
+    background-repeat : no-repeat;
+    background-size   : cover;
+}
+.flat-service.home2 .service-post {
+    background-color: var(--primary-color);
+    transition    : all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.flat-service.home2 .service-post:hover {
+    background-color: var(--primary-color6);
+    
+}
+.flat-service.home2 .service-post:hover h3 {
+    color: var(--primary-color);
+    transition    : all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.flat-service.home2 .service-post h3 a:hover {
+    color: var(--primary-color);
+   
+}
 /* Trusted */
 
 .flat-trusted .trusted-heading {
@@ -2617,6 +2640,29 @@ a:focus {
     color: var(--primary-color);
 }
 
+.flat-trusted .media-box {
+    padding-right: 99px;
+}
+.flat-trusted .media.img-style{
+    margin-bottom: 30px;
+}
+/* trusted home2 */
+.trusted-years2 {
+    text-align: center;
+    border-radius: 5px;
+    outline-offset: -13px;
+    color: var(--primary-color);
+    background-color: var(--primary-color6);
+    outline: 2px dashed rgba(255, 255, 255, 0.3);
+    
+    padding: 34px 0px 37px ;
+}
+.trusted-years2 h2 {
+    font-size: 32px;
+    line-height: 46px;
+    margin-left:  7px ;
+}
+
 /* mark */
 .flat-trusted .tf-mark {
     position: absolute;
@@ -2649,7 +2695,7 @@ a:focus {
 }
 
 /* count */
-.flat-counter {
+.flat-counter.tf-counter {
     background-image  : url(../images/background-section/bg-count.jpg);
     background-repeat : no-repeat;
     background-size   : cover;
@@ -2718,9 +2764,23 @@ a:focus {
     right: 72px;
 }
 
+/* count home2 */
+.flat-counter.counter2 {
+    margin-top: -1.5px;
+    padding-bottom: 120px;
+}
+.flat-counter.counter2 .count-row {
+    border-bottom: 1px solid rgba(28, 30, 34, 0.1);
+}
+.flat-counter.counter2 .counter-box .number {
+    color: var(--primary-color2);
+}
+.flat-counter.counter2 .counter-box h3{
+    color: var(--primary-color4);
+}
 /* work */
 
-.flat-work {
+.flat-work.tf-work {
     padding-left: 2.75%;
     padding-right: 2.75%;
     margin-top: -193px;
@@ -2771,6 +2831,7 @@ a:focus {
     background-color: rgba(255, 255, 255, 0.1);
   
 }
+.flat-work.home2 .work-post:hover .content,
 .flat-work .work-post:hover .content {
     background-color: var(--primary-color6);
     transition    : all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -2779,6 +2840,22 @@ a:focus {
 .flat-work .work-post .content a:hover,
 .flat-work .work-post:hover .content h3 {
     color: var(--primary-color) ;
+}
+/* work home2 */
+.flat-work.home2 {
+    background-color: var(--primary-color5);
+    padding-left: 2.75%;
+    padding-right: 2.75%;
+    position: relative;
+}
+.flat-work.home2 .work-heading {
+    margin-top: -2px;
+}
+.flat-work.home2 .work-heading h2 {
+    color: var(--primary-color2);
+}
+.flat-work.home2 .work-post .content {
+    background-color: var(--primary-color);
 }
 
 /* flat skill */
@@ -2824,7 +2901,7 @@ a:focus {
 .flat-and {
     background-image   : url(../images/background-section/bg-and.jpg);
     background-repeat  : no-repeat;
-    /* background-size: cover; */ 
+    background-size: cover; 
 }
 .flat-and .and-heading {
     padding-right: 80px;
@@ -2880,7 +2957,7 @@ a:focus {
 
 /* flat testimonial */
 
-.flat-testimonial {
+.flat-testimonial.falt-client {
     background-image     : url(../images/image-box/testimonial-1.jpg);
     background-repeat    : no-repeat;
     background-position-y: 68%;
@@ -2888,7 +2965,7 @@ a:focus {
     position: relative;
 }
 
-.flat-testimonial .testimonial-slider {
+.flat-testimonial .testimonial-slider.tf-style {
     box-shadow: 23px -20px 0px 0px rgb(255 64 64 / 10%),
                 40px -40px 0px 0px rgb(255 64 64 / 10%),
                 4px 4px 14px 4px rgba(0, 0, 0, 0.04);
@@ -2952,6 +3029,11 @@ a:focus {
     font-weight: 400;
     line-height: 30px;
     color      : var(--primary-color4) ;
+}
+
+/* testimonial home2 */
+.flat-testimonial .testimonial-post .content {
+    padding: 49px 37px 56px 49px;
 }
 
 /* Footer

@@ -936,7 +936,7 @@ video::before {
 
 /* swiper-pagination */
 
-.flat-service .swiper-pagination{
+.flat-service .swiper-pagination {
     width: 100%;
     margin-top: 58px;
     margin-left: -5px;
@@ -951,9 +951,36 @@ video::before {
     opacity: 1;
     margin: 0 5px !important;
 }
-
+.flat-work .swiper-pagination-bullet.swiper-pagination-bullet-active,
 .flat-service .swiper-pagination-bullet.swiper-pagination-bullet-active {
     background-color: var(--primary-color6);
+}
+
+
+.flat-service.home2 .swiper-pagination {
+    margin-top: 44px;
+}
+
+.flat-service.home2 .swiper-pagination-bullet {
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+}
+
+.flat-work .swiper-pagination {
+    width: 100%;
+    margin-top: 58px;
+    margin-bottom: -1px;
+    position: relative;
+    bottom: 0 !important;
+}
+.flat-work .swiper-pagination-bullet {
+    width: 50px;
+    height: 10px;
+    border-radius: 10px;
+    background: var(--primary-color);
+    opacity: 1;
+    margin: 0 5px !important;
 }
 
 /* circle progress */
