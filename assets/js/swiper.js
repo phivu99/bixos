@@ -70,7 +70,7 @@ var swiper =  new Swiper(".carousel-2", {
         disableOnInteraction: false,
     },
     slidesPerView: 1,   
-    loop: true,
+    loop: false,
     spaceBetween: 30,
     navigation: {
         clickable: true,
@@ -116,13 +116,38 @@ var swiper =  new Swiper(".carousel-3", {
         },
     },
 });
-var swiper =  new Swiper(".carousel-5", {
+
+// var swiper =  new Swiper(".carousel-4", {
+//     autoplay: {
+//         delay: 6000,
+//         disableOnInteraction: false,
+//     },
+//     slidesPerView: 1,   
+//     loop: true,
+//     spaceBetween: 30,
+//     pagination: {
+//         el: ".swiper-pagination",
+//         clickable: true,
+//       },
+//     breakpoints: {
+//         768: {
+//             slidesPerView: 2,
+//             spaceBetween: 30,
+//         },
+//         1024: {
+//             slidesPerView: 4,
+//             spaceBetween: 30,
+//         },
+//     },
+// });
+
+var swiper =  new Swiper(".carousel-4", {
     autoplay: {
-        delay: 5000,
+        delay: 6000,
         disableOnInteraction: false,
-        },
-    slidesPerView: 1,
-    loop: true, 
+    },
+    slidesPerView: 1,   
+    loop: false,
     spaceBetween: 30,
     navigation: {
         clickable: true,
@@ -135,34 +160,40 @@ var swiper =  new Swiper(".carousel-5", {
       },
     breakpoints: {
         768: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-        },
-        1024: {
-            slidesPerView: 1,
-            spaceBetween: 30,
-        },
-    },
-});
-var swiper =  new Swiper(".carousel-4", {
-    autoplay: {
-        delay: 6000,
-        disableOnInteraction: false,
-    },
-    slidesPerView: 1,   
-    loop: true,
-    spaceBetween: 30,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
-    breakpoints: {
-        768: {
             slidesPerView: 2,
             spaceBetween: 30,
         },
         1024: {
             slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
+});
+
+var swiper =  new Swiper(".carousel-5", {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        },
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 0,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination-testi",
+        clickable: true,
+      },
+    breakpoints: {
+        768: {
+            slidesPerView: 1,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 1,
             spaceBetween: 30,
         },
     },
