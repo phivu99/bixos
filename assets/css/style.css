@@ -1215,10 +1215,7 @@ a:focus {
     margin-left: -5px;
 }
 
-.site-header-home2 {
-    background-color: var(--primary-color);
-    position: relative !important;
-}
+
 /* Site Logo */
 
 .logo-home2 {
@@ -1234,6 +1231,8 @@ a:focus {
     line-height     : 84px;
     padding         : 0 38px;
 }
+
+
 
 /* Main Nav */
 
@@ -1696,12 +1695,13 @@ a:focus {
 /* style 2 */
 #site-header.style-2 .mobile-button {
     left: 30px;
+    
 }
 
-#site-header.style-2 .mobile-button:before,
-#site-header.style-2 .mobile-button:after,
-#site-header.style-2 .mobile-button span {
-    background-color  : var(--primary-color);
+#site-header .mobile-button.home2:before,
+#site-header .mobile-button.home2:after,
+#site-header .mobile-button.home2 span {
+    background-color  : var(--primary-color2);
     -webkit-transition: all ease 0.3s;
     -moz-transition   : all ease 0.3s;
     transition        : all ease 0.3s;
@@ -1709,9 +1709,13 @@ a:focus {
 
 
 /* Header Fixed */
+#site-header.header-style2 {
+    background-color: var(--primary-color);
+    position: relative !important;
+}
 
 #site-header.is-fixed {
-    position          : fixed;
+    position          : fixed !important;
     top               : -150px;
     left              : 0;
     width             : 100%;
@@ -1725,6 +1729,8 @@ a:focus {
     -o-transition     : all 0.3s ease;
     transition        : all 0.3s ease;
 }
+
+
 
 #site-header.is-fixed.is-small {
     top: 0;
@@ -1741,6 +1747,10 @@ a:focus {
 .header-style-2 #site-header.is-fixed {
     border    : 0px;
     background: rgba(30, 29, 29, 0.9);
+}
+
+#site-header.header-style2.is-fixed {
+    background-color: var(--primary-color);
 }
 
 
@@ -2236,6 +2246,10 @@ a:focus {
     padding: 21px 29.5px;
 }
 
+.flat-blog-grid.home2 {
+    padding-bottom: 138px;
+}
+
 /* flat blog details
 -------------------------------------------------------------- */
 
@@ -2449,8 +2463,6 @@ a:focus {
     padding       : 15.9px 30px;   
 }
 
-
-
 /* brand */
 
 .flat-brand {
@@ -2478,7 +2490,7 @@ a:focus {
 
 .flat-brand-1 .brand-slider {
     border-top: 1px solid rgba(0, 0, 0, 0.1);
-    padding: 61px 0px 120px;
+    padding   : 61px 0px 120px;
 }
 
 /* service */
@@ -2581,24 +2593,46 @@ a:focus {
 
 .flat-service.home2 .service-post {
     background-color: var(--primary-color);
+    z-index: 99;
+    position: relative;
     transition    : all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.flat-service.home2 .service-post:hover {
-    background-color: var(--primary-color6);    
+.flat-service.home2 .service-post::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: var(--primary-color6);
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: transform 500ms ease;  
+}
+
+.flat-service.home2 .service-post:hover::after {
+    transform       : scale(1, 1);
+    transform-origin: left top;
+    z-index         : 1;
 }
 
 .flat-service.home2 .service-post .content {
-    padding   : 15px 15px 28px 16px; 
+    padding : 15px 15px 28px 16px; 
+    position: relative;
+    z-index : 9;
+}
+
+.flat-service.home2 .service-post img {
+    z-index: 9;
 }
 
 .flat-service.home2 .service-post:hover h3 {
-    color: var(--primary-color);
-    transition    : all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--primary-color);   
 }
 
 .flat-service.home2 .service-post h3 a:hover {
-    color: var(--primary-color);   
+    color: var(--primary-color); 
 }
 
 /* Trusted */
@@ -2618,29 +2652,33 @@ a:focus {
     margin-top     : -64px;
     position       : relative;
 }
+
 .flat-trusted .text{
     margin-bottom: 40px;  
 }
+
 .flat-trusted .img-user img{
-    float: left;
+    float        : left;
     border-radius: 50px;
 }
+
 .flat-trusted .img-title {
-    float: left;
+    float      : left;
     margin-left: 28px;
-    margin-top: 7px;
+    margin-top : 7px;
 }
+
 .flat-trusted .media .trusted-years {
-    position: absolute;
-    right: 29px;
-    top: -70px;
-    z-index: 1;
-    text-align: center;
-    border-radius: 50%;
-    outline-offset: -13px;
-    color: var(--primary-color6);
+    position        : absolute;
+    right           : 29px;
+    top             : -70px;
+    z-index         : 1;
+    text-align      : center;
+    border-radius   : 50%;
+    outline-offset  : -13px;
+    color           : var(--primary-color6);
     background-color: var(--primary-color6);
-    outline: 2px dashed rgba(255, 255, 255, 0.3);
+    outline     : 2px dashed rgba(255, 255, 255, 0.3);
 }
 
 .flat-trusted .media .trusted-years h5{
@@ -2652,22 +2690,24 @@ a:focus {
 .flat-trusted .media-box {
     padding-right: 99px;
 }
+
 .flat-trusted .media.img-style{
     margin-bottom: 30px;
 }
+
 /* trusted home2 */
 .trusted-years2 {
-    text-align: center;
-    border-radius: 5px;
-    outline-offset: -13px;
-    color: var(--primary-color);
+    text-align      : center;
+    border-radius   : 5px;
+    outline-offset  : -13px;
+    color           : var(--primary-color);
     background-color: var(--primary-color6);
-    outline: 2px dashed rgba(255, 255, 255, 0.3);
-    
-    padding: 34px 0px 37px ;
+    outline         : 2px dashed rgba(255, 255, 255, 0.3);
+    padding         : 34px 0px 37px ;
 }
+
 .trusted-years2 h2 {
-    font-size: 32px;
+    font-size  : 32px;
     line-height: 46px;
     margin-left:  7px ;
 }
@@ -2850,12 +2890,13 @@ a:focus {
 .flat-work .work-post:hover .content h3 {
     color: var(--primary-color) ;
 }
+
 /* work home2 */
+
 .flat-work.home2 {
     background-color: var(--primary-color5);
     padding-left: 2.75%;
     padding-right: 2.75%;
-    position: relative;
 }
 .flat-work.home2 .work-heading {
     margin-top: -2px;
@@ -3048,11 +3089,11 @@ a:focus {
     padding: 49px 37px 56px 49px;
 }
 .flat-testimonial.home2 .testi-heading {
-    text-align: center;
+    text-align   : center;
     margin-bottom: 54px;
 }
 .flat-testimonial.home2 .testimonial-post .reviews-box {
-    display: flex;
+    display        : flex;
     justify-content: space-between;
 }
 .flat-testimonial.home2 .testimonial-post .reviews-box .media {
@@ -3102,13 +3143,11 @@ a:focus {
     top:0px;
     top: 21.9%;
     left: 27.5%;
-    
- 
 }
+
 .flat-journey .img-mark.style{
     mix-blend-mode: multiply;
 }
-
 
 .flat-journey .journey-heading {
     padding: 59px 100px 10px 1px;
@@ -3119,8 +3158,8 @@ a:focus {
 }
 
 .flat-journey .icon-box .icon{
-    display: inline-flex;
-    width: 49.5%;
+    display       : inline-flex;
+    width         : 49.5%;
     padding-bottom: 49px;
 }
 .flat-journey .icon-box .icon-one {
@@ -3128,11 +3167,11 @@ a:focus {
 }
 
 .flat-journey .icon-box .title-icon {
-    font-size: 16px;
+    font-size  : 16px;
     font-weight: 700;
     line-height: 30px;
-    padding: 0px 20px 0 34px; 
-    margin: -5px;
+    padding    : 0px 20px 0 34px; 
+    margin     : -5px;
 }
 .flat-journey .icon-box .icon-two {
     padding-left: 14px;
@@ -3142,9 +3181,7 @@ a:focus {
     border-bottom: solid 1px rgba(28, 30, 34, 0.1);
 }
 
-.flat-blog-grid.home2 {
-    padding-bottom: 138px;
-}
+
 
 /* Footer
 -------------------------------------------------------------- */
@@ -3397,5 +3434,6 @@ a:focus {
 .fa-times:before {
     color: var(--primary-color);
 }
+
 
 
