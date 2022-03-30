@@ -540,7 +540,7 @@ video::before {
     margin-bottom: 21px;
 }
 .slider .content p {
-    color: var(--primary-color);
+    color: #FFFFFFB2;
     font-size: 18px;
     margin-left: 2px;
 }
@@ -588,155 +588,53 @@ video::before {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
 .slider.home2 {
     padding: 259px 0 629px 0;
 }
+
 .slider.home2 .heading {
     margin-bottom: 46px;
 }
+
 .slider.home2 .content h1 {
     line-height: 82px;
 }
 
-/*  */
+/* slider home 3 */
 
-.slider.home-3 {
-    background-color: unset;
-}
-
-.slider.home-3 .back-ground {
-    padding-bottom: 100px;
+.slider.home3 {
+    background: url(../images/image-slider/slider-home3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.slider.home-3 .content-home-3 {
-    position: absolute;
-    bottom: 70px;
-    left: 100px;
-    padding: 78px 95px 71px 80px;
-    background-color: var(--primary-color2);
-    color: var(--primary-color);
+.slider.home3 {
+    padding: 252px 0 729px 0;
 }
 
-.slider.home-3 .content-home-3 .title-sub {
-    font-size: 14px;
-    margin-bottom: 8px;
+.slider.home3 .overlay-slider.style {
+    background: linear-gradient(252.17deg, rgba(28, 30, 34, 0.6) 18.37%, rgba(31, 39, 55, 0.85) 63.63%);
 }
 
-.slider.home-3 .content-home-3 h2 {
-    font-size: 100px;
-    letter-spacing: -2.9px;
-    line-height: 110px;
-    margin-left: -3px;
+.slider.home3 .content h1 {
+    line-height: 82px;
+    margin-bottom: 26px;
 }
 
-.slider.home-3 .content-home-3 .button-slider-home-3 {
-    position: absolute;
-    bottom: -15px;
-    left: 80px;
+.slider.home3 .button.style {
+    margin-right: 25px;    
 }
 
-.slider.home-3 .content-home-3 .button-slider-home-3 .button {
-    padding: 20px 44px;
+.slider.home3 .button.btn-style3 {
+    padding: 19px 28.5px;
 }
+/* .slider.home3 .content p {
+    margin-bottom: 26px;
+} */
 
-.slider.home-3 .button-custom-slider {
-    top: -45%;
-    right: 37px;
-}
 
-.slider.home-3 .swiper-button-next.button-slide-custom-next {
-    right: unset;
-    top: 53.9%;
-    left: 10px;
-}
 
-.slider.home-3 .swiper-button-prev.button-slide-custom-prev {
-    border-right: unset;
-}
-
-/* portfolio slider */
-.slider.home-3.portfolio-slider {
-    margin-bottom: -40px;
-}
-
-.slider.home-3.portfolio-slider .content-portfolio {
-    position: absolute;
-    top: 17.6%;
-    left: 17.6%;
-    background-color: var(--primary-color);
-    width: 452px;
-    padding: 60px 59px 38px 59px;
-    box-shadow: 0 5px 17px #645e5d24;
-}
-
-.slider.home-3.portfolio-slider .content-portfolio .title-sub {
-    margin-bottom: 10px;
-}
-
-.slider.home-3.portfolio-slider .content-portfolio h2 {
-    font-size: 40px;
-    line-height: 50px;
-    letter-spacing: -1.2px;
-    margin-bottom: 14px;
-}
-
-.slider.home-3.portfolio-slider .content-portfolio .description {
-    padding-right: 25px;
-}
-
-.slider.home-3.portfolio-slider .content-portfolio .widget-socials a.active {
-    color: var(--primary-color2);
-}
-
-.slider.home-3.portfolio-slider .content-portfolio .widget-socials li {
-    margin: 0;
-    margin-right: 17px;
-}
-.slider.home-3.portfolio-slider
-    .content-portfolio
-    .widget-socials
-    li:last-child {
-    margin-right: 0;
-}
-.slider.home-3.portfolio-slider .content-portfolio .infomation-content {
-    display: flex;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.slider.home-3.portfolio-slider .content-portfolio .info {
-    display: flex;
-    align-items: center;
-    margin-right: 61px;
-}
-
-.slider.home-3.portfolio-slider .content-portfolio .info li {
-    margin-right: 39px;
-}
-
-.slider.home-3.portfolio-slider .content-portfolio .info li:last-child {
-    margin-right: 0;
-}
-
-.slider.home-3.portfolio-slider .content-portfolio .info h4 {
-    letter-spacing: -0.5px;
-    margin-bottom: 2px;
-}
-
-.slider.home-3.portfolio-slider .content-portfolio .info p {
-    font-size: 14px;
-}
-
-.slider.home-3.portfolio-slider .button-custom-slider {
-    top: -21%;
-    right: 37px;
-}
-
-.slider.home-3.portfolio-slider .swiper-button-next.button-slide-custom-next {
-    right: unset;
-    top: 56.2%;
-    left: 10px;
-}
 
 /* slider effect */
 .slider .content,

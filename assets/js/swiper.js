@@ -117,29 +117,29 @@ var swiper =  new Swiper(".carousel-3", {
     },
 });
 
-// var swiper =  new Swiper(".carousel-4", {
-//     autoplay: {
-//         delay: 6000,
-//         disableOnInteraction: false,
-//     },
-//     slidesPerView: 1,   
-//     loop: true,
-//     spaceBetween: 30,
-//     pagination: {
-//         el: ".swiper-pagination",
-//         clickable: true,
-//       },
-//     breakpoints: {
-//         768: {
-//             slidesPerView: 2,
-//             spaceBetween: 30,
-//         },
-//         1024: {
-//             slidesPerView: 4,
-//             spaceBetween: 30,
-//         },
-//     },
-// });
+var swiper =  new Swiper(".carousel-10", {
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
+    slidesPerView: 1,   
+    loop: false,
+    spaceBetween: 30,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+        },
+    },
+});
 
 var swiper =  new Swiper(".carousel-4", {
     autoplay: {
