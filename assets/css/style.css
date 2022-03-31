@@ -1076,8 +1076,7 @@ a:focus {
     -moz-transition   : all 0.3s ease-in-out;
     -ms-transition    : all 0.3s ease-in-out;
     -o-transition     : all 0.3s ease-in-out;
-    transition        : all 0.3s ease-in-out;
-    
+    transition        : all 0.3s ease-in-out;   
 }
 
 .text-color-1 {
@@ -1734,8 +1733,7 @@ a:focus {
 
 /* style 2 */
 #site-header.style-2 .mobile-button {
-    left: 30px;
-    
+    left: 30px;   
 }
 
 #site-header .mobile-button.home2:before,
@@ -1747,6 +1745,14 @@ a:focus {
     transition        : all ease 0.3s;
 }
 
+#site-header .mobile-button.home3:before,
+#site-header .mobile-button.home3:after,
+#site-header .mobile-button.home3 span {
+    background-color  : var(--primary-color);
+    -webkit-transition: all ease 0.3s;
+    -moz-transition   : all ease 0.3s;
+    transition        : all ease 0.3s;
+}
 
 /* Header Fixed */
 #site-header.header-style2 {
@@ -2155,7 +2161,6 @@ a:focus {
     display: block;
     width: 100%;
     height: auto;
-    /* border-radius: 5px; */
     -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     transition        : all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 } 
@@ -2172,7 +2177,7 @@ a:focus {
 }
 
 .flat-blog-grid .grid-post:hover .media .tags::before {
-    border-top: 6px solid var(--primary-color6);
+    border-top        : 6px solid var(--primary-color6);
     -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     transition        : all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -2184,26 +2189,26 @@ a:focus {
 /*  */
 .flat-blog-details .post .media.img-1 .tags,
 .flat-blog-grid .grid-post .media .tags {
-    position: absolute;
-    top: 20px;
-    left: 30px;
-    font-size: 12px;
-    font-weight: 600;
-    border-radius: 5px;
-    padding: 6px 12px;
+    position        : absolute;
+    top             : 20px;
+    left            : 30px;
+    font-size       : 12px;
+    font-weight     : 600;
+    border-radius   : 5px;
+    padding         : 6px 12px;
     background-color: var(--primary-color2);
-    color: var(--primary-color);
-    transition        : all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    color           : var(--primary-color);
+    transition      : all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .flat-blog-details .post .media.img-1 .tags::before,
 .flat-blog-grid .grid-post .media .tags::before {
-    content: "";
-    position: absolute;
-    bottom: -6px;
-    left: 10px;
-    border-top: 6px solid var(--primary-color2);
+    content     : "";
+    position    : absolute;
+    bottom      : -6px;
+    left        : 10px;
+    border-top  : 6px solid var(--primary-color2);
     border-right: 4px solid transparent;
-    border-left: 4px solid transparent;
+    border-left : 4px solid transparent;
 }
     
 .flat-blog-grid .grid-post .content {
@@ -2289,6 +2294,28 @@ a:focus {
 .flat-blog-grid.home2 {
     padding-bottom: 138px;
 }
+
+/* home 3 */
+.flat-blog-grid.home03 {
+    background-color: var(--primary-color5);
+    z-index: 99;
+    position: relative;
+    padding-bottom: 138px;
+}
+.flat-blog-grid.home03 .grid-post .content {
+    padding-right: 0;
+}
+.flat-blog-grid.home03 .grid-post .content .title-item {
+    padding: 0;
+    margin-bottom: 10px;
+}
+.flat-blog-grid.home03 .grid-post .content p {
+    text-transform: capitalize;
+    padding-bottom: 40px;
+    margin-bottom: 29px;
+    border-bottom: solid 1px #1C1E2212;
+ }
+
 
 /* flat blog details
 -------------------------------------------------------------- */
@@ -3008,9 +3035,15 @@ a:focus {
 
 .flat-work.home3 {
     background-color: unset;
+    padding: 120px 0 143px 0;
 }
+
+.flat-work.home3 .work-post {
+    margin-bottom: 40px;
+}
+
 .flat-work.home3 .work-post .content {
-    margin-top: -110px;
+    margin     : -108px 12px 0;
     background-color: rgba(255, 255, 255, 0);
 }
 
@@ -3053,12 +3086,19 @@ a:focus {
     color: var(--primary-color4) ;
 }
 
+/* home 3 */
+.flat-team.home3 {
+    margin-top: -224px;
+    position  : relative;
+    z-index   : 99;
+}
+
 
 /* flat and */
 .flat-and {
     background-image   : url(../images/background-section/bg-and.jpg);
     background-repeat  : no-repeat;
-    background-size: cover; 
+    background-size    : cover; 
 }
 .flat-and .and-heading {
     padding-right: 80px;
@@ -3185,6 +3225,7 @@ a:focus {
 }
 
 /* testimonial home2 */
+
 .flat-testimonial.home2 {
     padding-top: 108px;
 }
@@ -3209,13 +3250,37 @@ a:focus {
 .flat-testimonial.home2 .testimonial-post .tf-texts {
     padding: 22px 0 0 44px;
 }
-.flat-testimonial .testimonial-post .tf-texts .media-1 img {
+.flat-testimonial.home2 .testimonial-post .tf-texts .media-1 img {
     top    : -18px;
     opacity: 0.1;
 }
-.flat-testimonial .testimonial-post .tf-texts .media-2 img {
+.flat-testimonial.home2 .testimonial-post .tf-texts .media-2 img {
     right  : 10px;
     opacity: 0.1;
+}
+
+/* testimonial home3 */
+
+.flat-testimonial.home3 .testimonial-post .reviews-box {
+    justify-content: unset;
+    display        : flex;
+}
+.flat-testimonial.home3 .testimonial-post .content {
+    padding: 50px 27px 56px 30px;
+}
+.flat-testimonial.home3 .testimonial-post .reviews-box .media {
+    margin-right: 29px;
+}
+.flat-testimonial.home3 .testimonial-post .tf-texts {
+    padding: 36px 33px 0 44px;
+}
+.flat-testimonial.home3 .testimonial-post .tf-texts .media-1 img {
+    top  : -5px;
+}
+.flat-testimonial.home3 .testimonial-post:hover .tf-texts .media-2 img,
+.flat-testimonial.home3 .testimonial-post:hover .tf-texts .media-1 img {
+    opacity: 1;
+    transition: all 0.3s ease-in-out;
 }
 
 /* flat journey */
@@ -3269,6 +3334,7 @@ a:focus {
     width         : 49.5%;
     padding-bottom: 49px;
 }
+
 .flat-journey .icon-box .icon-one {
     border-bottom: solid 2px var(--primary-color6);
 }
@@ -3280,6 +3346,7 @@ a:focus {
     padding    : 0px 20px 0 34px; 
     margin     : -5px;
 }
+
 .flat-journey .icon-box .icon-two {
     padding-left: 14px;
 }
@@ -3288,8 +3355,32 @@ a:focus {
     border-bottom: solid 1px rgba(28, 30, 34, 0.1);
 }
 
+.flat-journey.home3 {
+    padding-bottom: 120px;
+}
 
+/* tf-space flat-servece */
+.flat-servece {
+    background-image   : url(../images/background-section/bg-servece.jpg);
+    background-repeat  : no-repeat;
+    background-size    : cover; 
+    padding            : 91px 0 343px;
+    position: relative;
+}
+.flat-servece .title {
+    font-size  : 82px;
+    font-weight: 700;
+    line-height: 118px;
+    text-align : center;
+    color      : var(--primary-color);
+    padding    : 0 30px 30px;
+    border-bottom: solid 1px #FFFFFF1A;
+}
 
+.flat-servece .overlay-page {
+    background: linear-gradient(252.17deg, rgba(28, 30, 34, 0.6) 18.37%, rgba(31, 39, 55, 0.85) 63.63%);
+    opacity   : unset;
+}
 /* Footer
 -------------------------------------------------------------- */
 
