@@ -154,6 +154,10 @@
   .grid-post .content .entry-author {
      margin-right: 25px;
   }
+  
+  .flat-testimonial .swiper-pagination-testi {
+    text-align: center;
+  }
 
   .flat-testimonial.falt-client {
     background-position-y: 0%;
@@ -213,7 +217,7 @@
   .mobile-button {
     right: 55px;
   }
-  /* home 2 */
+
   .logo-home2 {
     line-height: 0;
   }
@@ -226,6 +230,10 @@
   .slider.home2 .content h1 {
     font-size: 82px;
     line-height: 92px;
+  }
+
+  .flat-servece .title {
+    padding: 0 0 30px 0;
   }
 
 }
@@ -490,8 +498,8 @@
   }
 
   .flat-servece .title {
-    font-size: 70px;
-    line-height: 84px;
+    font-size: 74px;
+    line-height: 86px;
   }
 }
 
@@ -528,7 +536,7 @@
 
   .flat-servece .title {
     font-size: 58px;
-    line-height: 60px;
+    line-height: 68px;
   }
 }
   

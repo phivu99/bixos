@@ -2026,8 +2026,7 @@ a:focus {
     position: absolute;
     top : 0;
     left: 0;
-    z-index: -1;
-    opacity: 0.7; 
+    mix-blend-mode: multiply;
 }
 .elip-header4 {
     position: absolute;
@@ -2530,6 +2529,40 @@ a:focus {
     padding       : 15.9px 30px;   
 }
 
+
+.flat-service-details .post .media.img-01 {
+    margin-bottom: 22px;
+}
+.flat-service-details .box {
+    margin-bottom: 28px;
+    display: flex;
+}
+
+.flat-service-details .service-tag {
+    margin-top: -11px;
+    margin-left: 59px;
+}
+.flat-service-details .service-tag.tag2 {
+    margin-left: 42px;
+}
+
+.flat-service-details  ul li a {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 33px;
+    color: var(--primary-color4);
+}
+
+.flat-service-details  ul li a::before {
+    content: '\f055';
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 700;
+    color: var(--primary-color6);
+    margin-right: 4px;
+}
+.text-2 {
+    margin-bottom: 40px; 
+}
 /* brand */
 
 .flat-brand {
@@ -2952,6 +2985,14 @@ a:focus {
 .flat-counter.home2 .counter-box h3{
     color: var(--primary-color4);
 }
+
+.flat-counter.page {
+    padding-bottom: 14px;
+}
+.flat-counter.page2 {
+    margin-top: -2.5px;
+}
+
 /* work */
 
 .flat-work.tf-work {
@@ -3016,7 +3057,7 @@ a:focus {
     color: var(--primary-color) ;
 }
 
-/* work home2 */
+/* work home2 home3 */
 
 .flat-work.home2 {
     background-color: var(--primary-color5);
@@ -3046,7 +3087,6 @@ a:focus {
     margin     : -108px 12px 0;
     background-color: rgba(255, 255, 255, 0);
 }
-
 
 /* flat skill */
 .flat-skill .skill-heading {
@@ -3151,6 +3191,14 @@ a:focus {
     display         : none;
     background-color: var(--primary-color5) ;
 }
+
+.flat-and.page {
+    padding: 117px 0 108px;
+} 
+.flat-and.page2 {
+    background: unset;
+    margin-top: -2px;
+} 
 
 /* flat testimonial */
 
@@ -3367,19 +3415,24 @@ a:focus {
     padding            : 91px 0 343px;
     position: relative;
 }
+
 .flat-servece .title {
     font-size  : 82px;
     font-weight: 700;
     line-height: 118px;
     text-align : center;
     color      : var(--primary-color);
-    padding    : 0 30px 30px;
+    padding    : 0 100px 30px;
     border-bottom: solid 1px #FFFFFF1A;
 }
 
 .flat-servece .overlay-page {
     background: linear-gradient(252.17deg, rgba(28, 30, 34, 0.6) 18.37%, rgba(31, 39, 55, 0.85) 63.63%);
     opacity   : unset;
+}
+
+.flat-servece.page {
+    padding: 216px 0;
 }
 /* Footer
 -------------------------------------------------------------- */
