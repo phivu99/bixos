@@ -322,6 +322,28 @@ video::before {
     margin-bottom: 13px;
 }
 
+.flat-work .side-bar {
+    padding-bottom: 40px;
+}
+
+.flat-work .widget.recent-news .texts {
+    margin-top: 7px;
+}
+.flat-work .widget.recent-news .texts .title-item {
+    margin-bottom: 14px;
+}
+
+.flat-work .widget.recent-news li {
+    padding-bottom: 6px;
+    border-bottom : 1px solid #1C1E2212;
+}
+.flat-work .widget.recent-news .flat {
+    border-bottom : unset;
+}
+
+.flat-work .widget.recent-news {
+    margin: 0;
+}
 /* categories */
 .widget.widget-categories li {
     position: relative;

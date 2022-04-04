@@ -143,6 +143,9 @@
   .flat-skill .media img {
     width: 100%;
   }
+  .flat-work .widget.recent-news li {
+    padding-bottom: 18px;
+  }
   .flat-trusted .media-box,
   .flat-and .and-heading {
     padding: 0;
@@ -263,7 +266,7 @@
   .flat-work .work-post .content {
     padding: 24px 10px 20px 25px;
   }
-
+  .flat-service-details .post .icon-box .icon-three,
   .flat-journey .icon-box .icon-two,
   .flat-trusted .trusted-heading {
     padding-left: 0;
@@ -406,6 +409,28 @@
 
   .flat-trusted.home3 .years-title {
     margin-top: 0;
+  }
+  .flat-service-details .post .box {
+    display: flow-root;
+    margin-bottom: 15px;
+  }
+  .flat-service-details .post .box .media {
+    margin-bottom: 20px;
+    float: none;
+  }
+  .flat-service-details .post .service-tag.tag2,
+  .flat-service-details .post .service-tag.tag1 {
+    width: 50%;
+    float: left;
+    margin: 0;
+  }
+
+  .flat-service-details .flat-accordion .toggle-content {
+    padding-right: 20px;
+  }
+  .flat-service-details .post .icon-box .icon {
+    width: 100%; 
+    display: inline-flex;
   }
 
   /*  */
