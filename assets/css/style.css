@@ -3474,26 +3474,103 @@ a:focus {
     background-color: var(--primary-color5) ;
 }
 
-.blog-case {
+/* case study */
+.flat-case .blog-case {
     margin-top: 48px;
     margin-bottom: 15px;
     
 }
-.blog-case .button {
+.flat-case .blog-case .button {
     padding: 19.5px 48px;
 }
-.work-wrap {
+.flat-case .work-wrap {
     display: inline-flex;
     width: 49.7%;
 
 }
-.work-wrap .work-post.item {
+.flat-case .work-wrap .work-post.item {
     margin-left: 13px;
 }
-.title-item {
+.flat-case .title-item {
     font-size: 12px;
     font-weight: 600;
 }
+
+.flat-case-img {
+ padding: 120px 0 30px 0;
+}
+.flat-case-details .post {
+    padding-top: 4px;
+    padding-left: 1px;
+}
+.flat-case-details .post .tags {
+    margin-bottom: 28px;
+}
+.flat-case-details .post .tags span {
+    position: relative;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: 3px 20px 3px 14px;
+    margin-left: 2px;
+    background-color: var(--primary-color6);
+    color: var(--primary-color);
+    z-index: 2;
+}
+.flat-case-details .post h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.flat-case-details .post .box-img {
+    display: flex;
+    margin-bottom: 40px;
+}
+.flat-case-details .post .box-img .image-2 {
+    margin-left: 30px;
+}
+
+.flat-case-details .post .text {
+    margin-bottom: 40px ;
+}
+.flat-case-details .post .text-2 {
+    margin-bottom: 38px;
+}
+.flat-case-details .post .title-style {
+    margin-bottom: 17px;
+}
+.flat-case-details .post h3 span {
+    font-weight: 400;
+}
+.flat-case-details .wrap-pogress {
+   margin-bottom: 18px;
+   display      : flow-root;
+}
+.flat-case-details .progress-box {
+   margin    : 0;
+   float     : left;
+   text-align: center;
+   width     : 25%;
+}
+.flat-case-details .progress-box.style-1 {
+    padding-right: 25px;
+}
+.flat-case-details .progress-box.style-2 {
+    padding-right: 10px;
+}
+.flat-case-details .progress-box.style-3 {
+    padding-right: 5px;
+}
+.flat-case-details .progress-box.style-4 {
+    padding-left: 10px;
+}
+.flat-work.page-detail .work-heading h2,
+.flat-case-details .content h3 {
+    margin: 0;
+}
+.flat-work.page-detail {
+    padding: 110px 0 90px;
+}
+
 
 /* Footer
 -------------------------------------------------------------- */

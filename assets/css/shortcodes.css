@@ -322,28 +322,30 @@ video::before {
     margin-bottom: 13px;
 }
 
-.flat-work .side-bar {
+/* case study widget */
+.flat-case .side-bar {
     padding-bottom: 40px;
 }
 
-.flat-work .widget.recent-news .texts {
+.flat-case .widget.recent-news .texts {
     margin-top: 7px;
 }
-.flat-work .widget.recent-news .texts .title-item {
+.flat-case .widget.recent-news .texts .title-item {
     margin-bottom: 14px;
 }
 
-.flat-work .widget.recent-news li {
+.flat-case .widget.recent-news li {
     padding-bottom: 6px;
     border-bottom : 1px solid #1C1E2212;
 }
-.flat-work .widget.recent-news .flat {
+.flat-case .widget.recent-news .flat {
     border-bottom : unset;
 }
 
-.flat-work .widget.recent-news {
+.flat-case .widget.recent-news {
     margin: 0;
 }
+
 /* categories */
 .widget.widget-categories li {
     position: relative;
@@ -419,12 +421,63 @@ video::before {
 
 /* widget infomation */
 
-.widget-information {
-    margin-bottom: 55px;
+.flat-case-details .side-bar {
+    padding: 56px 25.5px 49px 25px;
+    border-radius: 5px;
 }
 
-.widget-information li {
-    margin-bottom: 47.5px;
+.widget-information ul li{
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+    border-bottom: 1px dashed rgba(28, 30, 34, 0.07);
+    display: flex;
+}
+.widget-information ul .icon-style {
+    border-bottom: unset;
+    padding: 0;
+    margin-bottom: 2px;
+}
+
+.widget-information ul li .media {
+    width: 14.5%;
+}
+
+.widget-information ul li .media.img2 {
+    margin-top: 3px;
+}
+
+.widget-information ul li .media.img4 {
+    margin-top: 4px;
+}
+
+.widget-information ul li .title-icon {
+    font-weight  : 400;
+    font-size    : 18px;
+    margin-bottom: 18px;
+}
+
+.widget-information ul li .text-icon {
+    font-weight: 400;
+    font-size  : 14px;
+    line-height: 30px;
+    color      : var(--primary-color4);
+}
+
+.widget-information ul li .title-imformation.title1 {
+    padding-top : 7px;
+    padding-left: 10px;
+}
+.widget-information ul li .title-imformation.title2 {
+    padding-left: 15px;
+    padding-top : 7px ;
+}
+.widget-information ul li .title-imformation.title3 {
+    padding-left: 1px;
+    padding-top : 5px ;
+}
+.widget-information ul li .title-imformation.title4 {
+    padding-left: 1px;
+    padding-top : 5px ;
 }
 
 .widget-information .item::after {
@@ -869,6 +922,7 @@ video::before {
     -ms-transform: translateX(-50%);
     -webkit-transform: translateX(-50%);
 }
+.flat-case-details .post .tags span::before,
 .progress-skill .couter .chart span.percent::before,
 .flat-work .work-post .tags span::before,
 .progress-number-mark::before {
