@@ -2528,6 +2528,17 @@ a:focus {
     text-transform: uppercase;
     padding       : 15.9px 30px;   
 }
+/* blog */
+.flat-blog .blog-wrap {
+    display: inline-flex;
+    width: 49.7%;
+}
+.flat-blog .blog-wrap .grid-post.post-1 {
+    margin-right: 12.5px;
+}
+.flat-blog .blog-wrap .grid-post.post-2 {
+    margin-left: 12.5px;
+}
 
 /* brand */
 
@@ -3273,7 +3284,7 @@ a:focus {
     opacity: 0.1;
 }
 .flat-testimonial.home2 .testimonial-post .tf-texts .media-2 img {
-    right  : 10px;
+    right  : 0px;
     opacity: 0.1;
 }
 
@@ -3299,6 +3310,17 @@ a:focus {
 .flat-testimonial.home3 .testimonial-post:hover .tf-texts .media-1 img {
     opacity: 1;
     transition: all 0.3s ease-in-out;
+}
+
+/* page */
+.flat-testimonial.page {
+    padding: 120px 0 92px;
+}
+.flat-testimonial.page .testimonial-slider {
+    margin-bottom: 25px;
+}
+.flat-testimonial.page .testimonial-post {
+    border-bottom: 4px solid #F6F6F6;
 }
 
 /* flat journey */
@@ -3570,7 +3592,6 @@ a:focus {
 .flat-work.page-detail {
     padding: 110px 0 90px;
 }
-
 
 /* Footer
 -------------------------------------------------------------- */

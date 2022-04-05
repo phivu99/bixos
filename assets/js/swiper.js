@@ -256,3 +256,32 @@ var swiper =  new Swiper(".carousel-7", {
         },
     },
 });
+
+var swiper =  new Swiper(".carousel-8", {
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+        },
+    slidesPerView: 1,
+    loop: false, 
+    spaceBetween: 30,
+    navigation: {
+        clickable: true,
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    breakpoints: {
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        1024: {
+            slidesPerView: 3,
+            spaceBetween: 30,
+        },
+    },
+});
