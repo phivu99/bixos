@@ -980,12 +980,12 @@ video::before {
 
 /* tf map */
 .tf-map {
-    margin: 0 44px;
+  padding-top: 120px;
 }
 
 .tf-map .map-content {
     width: 100%;
-    height: 750px;
+    height: 600px;
 }
 
 /* button toggle */
