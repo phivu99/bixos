@@ -636,6 +636,10 @@
     padding: 31px 12px 35px 0px;
   }
 
+  .flat-and {
+    background-size: unset;
+}
+
 }
 
 /* ------------------------------------------ */

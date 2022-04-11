@@ -2141,27 +2141,45 @@ a:focus {
 .flat-work .work-post .media,
 .flat-blog-grid .grid-post .media {
    position: relative;
-   background: var(--primary-color6);
-    width: 100%;
-    border-radius: 10px;
+   border-radius: 10px;
+}
+
+.flat-blog-details ul li .thumb::after,
+.flat-work .work-post .media::after,
+.flat-blog-grid .grid-post .media::after {
+    content         : "";
+    width           : 100%;
+    height          : 100%;
+    position        : absolute;
+    right           : 0;
+    top             : 0;
+    background      : #FF404033;
+    transform       : scale(0, 0);
+    /* transform-origin: center; */
+    transition      : transform 500ms ease;  
+    border-radius   : 5px;
+}
+
+.flat-blog-details ul li .thumb::after {
+    border-radius   : 50px;
 }
 
 .flat-work .work-post .media img,
-.flat-blog-details .side-bar ul li .thumb img,
+.flat-blog-details ul li .thumb img,
 .flat-blog-grid .grid-post .media img {
-    display: block;
-    width: 100%;
-    height: auto;
-    opacity: 1;
+    display : block;
+    width   : 100%;
+    height  : auto;
     -webkit-transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     transition        : all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
 } 
 
 /* hover */
-.flat-work .work-post:hover .media img,
-.flat-blog-details .side-bar ul li:hover .thumb img,
-.flat-blog-grid .grid-post:hover .media img{
-    opacity: 0.8;
+.flat-work .work-post:hover .media::after ,
+.flat-blog-details ul li:hover .thumb::after,
+.flat-blog-grid .grid-post:hover .media::after {
+    transform       : scale(1, 1);
+    transform-origin: center;
 }
 
 .flat-blog-grid .grid-post:hover .media .tags{
@@ -3132,6 +3150,7 @@ a:focus {
 .flat-work.home3 .work-post .content {
     margin          : -108px 12px 0;
     background-color: rgba(255, 255, 255, 0);
+    position        : relative;
 }
 
 /* flat skill */
@@ -3158,6 +3177,7 @@ a:focus {
 .flat-team {
     padding-bottom: 88px;
 }
+
 .flat-team .team-heading {
     text-align   : center;
     margin-bottom: 53px;
