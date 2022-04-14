@@ -272,11 +272,16 @@
   }
 
   #site-header {
-    padding: 0 22px;
+    padding: 0 15px;
+  }
+
+  .header-style3,
+  .header-style2 {
+    padding: 0 0 !important;
   }
 
   .mobile-button {
-    right: 55px;
+    right: 15px;
   }
 
   .logo-home2 {
@@ -549,7 +554,7 @@
     display: none;
   }
 
-  #top-bar,
+  /* #top-bar,
   #site-header {
     padding: 0 15px;
   }
@@ -558,7 +563,7 @@
   .header-nav-right,
   #site-header .mobile-button {
     right: 15px;
-  }
+  } */
 
   #top-bar .top-bar-content .inner,
   .flat-blog-details .post .infor-row,

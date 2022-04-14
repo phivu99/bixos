@@ -8,6 +8,7 @@
 /* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap'); */
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
 @import "responsive.css";
 @import "bootstrap.css";
 @import "animate.css";
@@ -1983,8 +1984,13 @@ a:focus {
     background-size    : cover;
     background-repeat  : no-repeat;
     background-position: center;
-    padding            : 294px 0 154px 0;
+    padding            : 294px 0 169px 0;
 }
+
+.flat-title-page.page-about {
+    padding            : 280px 0 169px 0;
+}
+
 .overlay-page {
     background-color: #222429;
     left            : 0;
@@ -2054,15 +2060,13 @@ a:focus {
     width         : 100%;
     font-size     : 18px;
     font-weight   : 400;
-    letter-spacing: 0px;
-    margin-bottom : 15px;
 }
 
 .breadcrumbs .breadcrumb-trail>a,
 .breadcrumbs .breadcrumb-trail>span {
     position     : relative;
     display      : inline-block;
-    padding-right: 17px;
+    padding-right: 16px;
     margin-top   : 17px;
 }
 
@@ -3001,10 +3005,6 @@ a:focus {
     margin-right: 5px;
 }
 
-.flat-counter .counter-box .number-style::after {
-    content: 'K';  
-}
-
 .flat-counter .counter-box h3 {
     color: #d9d9d9;
 }
@@ -3021,6 +3021,24 @@ a:focus {
 
 .flat-counter .mark-style {
     right: 72px;
+}
+
+@property --v2 {
+    syntax: "<integer>";
+    initial-value: 5;
+    inherits: true;
+}
+
+.flat-counter .counter-box .number-style {
+  counter-reset: v2 var(--v2);
+}
+
+.flat-counter .counter-box .number-style::after {
+    content:  'K';
+}
+
+.flat-counter .counter-box .number-style.number-one::after {
+    content:  "." counter(v2) "K";
 }
 
 /* count home2 */
@@ -3350,7 +3368,7 @@ a:focus {
     padding-top: 108px;
 }
 
-.flat-testimonial.home2 .testimonial-post {
+.flat-testimonial.home2 .testimonial-post .content {
     box-shadow: 4px 4px 14px 4px rgba(0, 0, 0, 0.04);
 }
 
@@ -3393,7 +3411,15 @@ a:focus {
 }
 
 .flat-testimonial.home3 .testimonial-post .content {
-    padding: 50px 27px 56px 30px;
+    padding: 45px 22px 51px 25px;
+    border: 5px solid #ffffff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+}
+
+.flat-testimonial.home3 .testimonial-post .content:hover {
+    border: 5px solid #F6F6F6;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
 }
 
 .flat-testimonial.home3 .testimonial-post .reviews-box .media {
@@ -3410,19 +3436,16 @@ a:focus {
 
 .flat-testimonial.home3 .testimonial-post:hover .tf-texts .media-2 img,
 .flat-testimonial.home3 .testimonial-post:hover .tf-texts .media-1 img {
-    opacity: 1;
+    opacity   : 1;
     transition: all 0.3s ease-in-out;
 }
 
 /* page testimonial*/
 .flat-testimonial.page {
-    padding: 120px 0 92px;
+    padding: 120px 0 90px;
 }
-.flat-testimonial.page .testimonial-slider {
-    margin-bottom: 25px;
-}
-.flat-testimonial.page .testimonial-post {
-    border-bottom: 4px solid #F6F6F6;
+.flat-testimonial.page .testimonial-post  {
+    margin-bottom: 30px;
 }
 
 /* flat journey */
@@ -3458,7 +3481,7 @@ a:focus {
     left    : 27.5%;
 }
 
-.flat-journey .img-mark.style{
+.flat-journey .img-mark.style {
     mix-blend-mode: multiply;
 }
 
@@ -3940,8 +3963,7 @@ a:focus {
 
 .widget-social-footer h3 {
     font-size     : 14px;
-    weight        : 600;
-    letter-spacing: -0.2px;
+    font-weight   : 600;
     color         :  var(--primary-color);
     text-align    : center;
 }

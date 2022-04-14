@@ -5079,7 +5079,6 @@ a.badge:focus, a.badge:hover {
 }
 
 .media {
-
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

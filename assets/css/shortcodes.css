@@ -521,6 +521,10 @@ video::before {
     left: 19.1%;
 }
 
+.slider .content.flat {
+    left: -3px;
+}
+
 .slider .heading {
     margin-bottom: 71px;
 }
